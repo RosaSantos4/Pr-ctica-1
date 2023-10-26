@@ -75,16 +75,20 @@
                     <!-- Faltan las imágenes que pasarían con el tiempo o si pulsas en galería  -->
                     <img src="media/gallerygrande.png" alt="">
                 </div>
+                <!-- Descripción del producto y opción de compra -->
                 <div class="col-4" id="producto_info">
                     <div id="producto_titulo">
                         <h3>BEER FREE</h3>
                         <h4>SIN GLUTEN</h4>
                     </div>
-                    <div id="stars">
+                    <!-- Puntuación del producto -->
+                    <div id="producto_stars">
                         <img src="media/starsgrande.png" alt="">
+                        <!-- Al seleccionar esto debería llevarte a la altura de reviews  -->
                         <p>2 reviews</p>
                     </div>
-                    <div id="descripcion">
+                    <!-- Descripción del producto -->
+                    <div>
                         <p>
                             Nos enorgullece decir que somos la primera cerveza sin gluten a la que le importa el look de nuestra cerveza. Pero lo mejor de todo es que no solo somos guapos si no que estamos REBUENOS.
                             <br>
@@ -92,28 +96,32 @@
                             Pruébala.
                         </p>
                     </div>
-                    <div id="accion_compra">
+                    <!-- Opción de compra  -->
+                    <div id="producto_accion_compra">
                         <h4>10€</h4>
-                        <div id="seleccion">
+                        <!-- Seleccionar si 6 o 12 botellas -->
+                        <div id="producto_seleccion">
                             <button type="button" class="btn btn-primary">6</button>
                             <button type="button" class="btn btn-secondary">12</button>
                         </div>
-                        <div id="cantidad">
+                        <!-- Cuantas cajas quieres y el subtotal  -->
+                        <div id="producto_cantidad">
                             <button type="button" class="btn btn-secondary">-1+</button>
                             <p>SUBTOTAL. 10€</p>
                         </div>
-                        <div id="boton">
+                        <!-- Botón para finalizar la compra y que se añade al carrito -->
+                        <div>
                             <button type="button" class="btn btn-primary">COMPRAR</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="row" id="reviews">
+            <div class="row" id="producto_nutri_review">
                 <div class="col-2">
                     <!-- vacío -->
                 </div>
                 <div class="col-6">
-                    <div class="row" id="info_nutricional">
+                    <div class="row" id="nutri">
                         <h5>INFORMACIÓN NUTRICIONAL</h5>
                         <p>
                             33cl. ALC. 5,5% vol
@@ -170,16 +178,29 @@
         </section>
     </main>
     <footer>
-        <div id="subscribir">
+        <div class="row" id="contacto_titulo">
             <h1>CONTÁCTANOS</h1>
             <p>Suscríbete a nuestra Newsletter</p>
-            <p>No te pierdas ninguna noticia sobre Beer Free.</p>
         </div>
-        <div id="subscribir_formulario">
-            <p>Email</p>
-            <button type="button" class="btn btn-primary">SUBSCRIBIRME</button>
+        <div class="row" id="contacto_formulario">
+            <div class="col-8">
+                <p>No te pierdas ninguna noticia sobre Beer Free.</p>
+                <form>
+                    <input type="text" id="fname" name="fname" value="email" required><br>
+                </form>
+                <button type="button" class="btn btn-primary">SUBSCRIBIRME</button>
+            </div>
+            <div class="col-4">
+                <img src="media/pegatina_amigable.png" alt="">
+                <img src="media/pegatina_gluten.png" alt="">
+            </div>
         </div>
-               
+        <div class="row" id="contacto_rrss">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
         <!-- unión con javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
     </footer>
