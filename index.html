@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+        <!-- Iconos se ven siempre. Las palabras se despliegan cuando se da al menú hamburguesa -->
         <div class="row">
             <div class="col-2"><i class="fa-solid fa-cart-shopping"></i></div>
             <div class="col-2">Producto</div>
@@ -22,19 +23,21 @@
             <div class="col-2"><i class="fa-solid fa-bars"></i></div>
         </div>
     </header>
-
-<!-- Pantalla completa de inicio -->
     <main>
-        <section class="container" id="inicio">
+        <!-- A pantalla completa: gráfica de inicio -->
+        <section class="container" id="grafica">
             <div class="row" id="logo">
                 <img src="media/logo_blanco.png" alt="Logo Beer Free versión blanca">
             </div>
-            <div class="row" id="grafica">
+            <div class="row" id="grafica_imagenes">
+                <!-- Cada imagen es un link -->
                 <div class="col-6" id="links">
                     <div class="row">
+                        <!-- Link producto  -->
                         <div class="col-3">
                             <img src="media/pegatina_producto.png" alt="">
                         </div>
+                        <!-- Link contacto -->
                         <div class="col-3">
                             <img src="media/pegatina_contacto.png" alt="">
                         </div>
@@ -43,23 +46,27 @@
                         <h2>LA CERVEZA + AMIGABLE</h2>
                     </div>
                     <div class="row">
+                        <!-- Link carrito -->
                         <div class="col-3">
                             <img src="media/pegatina_carrito.png" alt="">
                         </div>
+                        <!-- Link historia -->
                         <div class="col-3">
                             <img src="media/pegatina_historia.png" alt="">
                         </div>
                     </div>
                 </div>
-                <div class="col-6" id="imagen_grafica">
+                <!-- Imagen de producto -->
+                <div class="col-6" id="grafica_cerveza">
                     <img src="media/cerveza_sin_grafica.png" alt="Botellín Beer Free">
                 </div>
             </div>
         </section>
 <!-- Parte de producto -->
         <section class="container" id="producto">
-            <div class="row" id="compra">
-                <div class="col-2" id="galleria">
+            <div class="row" id="producto_compra">
+                <div class="col-2" id="producto_galeria">
+                    Falta
                     <img src="media/gallery1.png" alt="">
                     <img src="media/gallery2.png" alt="">
                     <img src="media/gallery3.png" alt="">
@@ -162,8 +169,18 @@
         </section>
     </main>
     <footer>
+        <div id="subscribir">
+            <h1>CONTÁCTANOS</h1>
+            <p>Suscríbete a nuestra Newsletter</p>
+            <p>No te pierdas ninguna noticia sobre Beer Free.</p>
+        </div>
+        <div id="subscribir_formulario">
+            <p>Email</p>
+            <button type="button" class="btn btn-primary">SUBSCRIBIRME</button>
+        </div>
+               
+        <!-- unión con javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
     </footer>
-    
 </body>
 </html>
