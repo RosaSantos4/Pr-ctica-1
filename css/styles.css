@@ -23,10 +23,18 @@ nav.menu ul {
 } 
 
 nav.menu ul a {
-    padding: 0.5rem;
+    width: 100%;
+    padding-left: 6em;
+    padding-right: 4em;
     text-decoration: none;
     color: black;
 }
+
+.fa-solid {
+    color: #0D55A2;
+}
+
+/* Falta hacer que el menú aparezca al hacer scroll y se quede fijo en la pantalla (usarlo de mad tat)  */
 
 #menu {
     display: flex;
@@ -39,10 +47,14 @@ nav.menu ul a {
     background-color: #0D55A2;
     margin: 0;
     max-width: 100%;
+    margin-bottom: 2em;
 }
 
 #logo {
-    width: 15%;
+    display: grid;
+    width: 15em;
+    place-items: center;
+    margin: auto;
 }
 
 #white {
