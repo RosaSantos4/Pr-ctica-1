@@ -13,3 +13,55 @@ form {
 #header {
     font-family: 'Courier Prime', monospace;
 }
+
+nav.menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+} 
+
+nav.menu ul a {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: black;
+}
+
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+}
+
+#grafica {
+    background-color: #0D55A2;
+    margin: 0;
+    max-width: 100%;
+}
+
+#logo {
+    width: 15%;
+}
+
+#white {
+    color: white;
+    font-size: 5.5em;
+    margin-left: 1em;
+    margin-bottom:0;
+    margin-right: 0;
+}
+
+#pegatina {
+    margin-right: 10em;
+}
+
+#pegatina_1 {
+    margin-right: 7em;
+}
+
+#grafica_cerveza {
+    width: 90%;
+    margin-right: 3em;
+}
