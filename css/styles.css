@@ -250,3 +250,56 @@ h6 {
     margin-right: 1em;
     margin-bottom: 1em;
 }
+
+main {
+    margin-bottom: 3em;
+}
+
+footer {
+    background-color: #FAC100;
+}
+
+h1 {
+    font-size: 7em;
+    color: white;
+    padding-top: 0.5em;
+    margin-left: 0.5em;
+    margin-bottom: 0;
+}
+
+#suscribirse {
+    color: white;
+    font-size: 2em;
+    margin-left: 2em;
+    margin-top: 0;
+}
+
+.news {
+    padding-left: 4.25em;
+}
+
+#fname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 55%;
+    border-radius: 13px;
+    border: 5px solid var(--blue, #0D55A2);
+    background-color: white;
+    margin: 1em;
+    margin-left: 4em;
+    padding-left: 1em;
+    color: #0D55A2;
+}
+
+#suscribirme {
+    font-family: 'Courier Prime', monospace;
+    color: white;
+    font-size: 1.5em;
+    width: auto;
+    margin-left: 2.5em;
+}
+
+
+
