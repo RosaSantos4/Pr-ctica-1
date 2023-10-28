@@ -104,29 +104,31 @@
                     </div>
                     <!-- Descripción del producto -->
                     <div>
-                        <p>
-                            Nos enorgullece decir que somos la primera cerveza sin gluten a la que le importa el look de nuestra cerveza. Pero lo mejor de todo es que no solo somos guapos si no que estamos REBUENOS.
-                            <br>
-                            ¿Qué no te lo crees?
-                            Pruébala.
-                        </p>
+                        <p class="salto_linea">Nos enorgullece decir que somos la primera cerveza sin gluten a la que le importa el look de nuestra cerveza. Pero lo mejor de todo es que no solo somos guapos si no que estamos REBUENOS.</p>
+                        <p>¿Qué no te lo crees?</p>
+                        <p class="bold">Pruébala.</p>
                     </div>
                     <!-- Opción de compra  -->
                     <div id="producto_accion_compra">
-                        <h4>10€</h4>
+                        <h5 class="red">10€</h4>
                         <!-- Seleccionar si 6 o 12 botellas -->
                         <div id="producto_seleccion">
-                            <button type="button" class="btn btn-primary">6</button>
-                            <button type="button" class="btn btn-secondary">12</button>
+                            <button type="button" class="btn btn-primary">6 <img src="media/icono_botella_blanco.png" alt=""></button>
+                            <button type="button" class="btn btn-secondary">12 <img src="media/icono_botella_azul.png" alt=""></button>
                         </div>
                         <!-- Cuantas cajas quieres y el subtotal  -->
                         <div id="producto_cantidad">
-                            <button type="button" class="btn btn-secondary">-1+</button>
-                            <p>SUBTOTAL. 10€</p>
+                            <!-- Había que usar un botón compuesto para que funcionara bien  -->
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-outline-primary">-</button>
+                                <button type="button" class="btn" id="special">1</button>
+                                <button type="button" class="btn btn-outline-primary">+</button>
+                              </div>
+                            <p class="subtotal">SUBTOTAL. 10€</p>
                         </div>
                         <!-- Botón para finalizar la compra y que se añade al carrito -->
                         <div>
-                            <button type="button" class="btn btn-primary">COMPRAR</button>
+                            <button type="button" class="btn btn-primary" id="comprar">COMPRAR</button>
                         </div>
                     </div>
                 </div>
