@@ -193,16 +193,6 @@ h6 {
     margin-bottom: 1.5em;
 }
 
-#formulario {
-    display: flex;
-    align-items: center;
-    height: auto;
-    width: auto;
-    border-radius: 13px;
-    border: 5px solid var(--blue, #0D55A2);
-    background-color: white;
-}
-
 #formulario-reviews {
     display: flex;
     align-items: center;
@@ -213,3 +203,50 @@ h6 {
     background-color: white;
 }
 
+#formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: auto;
+    border-radius: 13px;
+    border: 5px solid var(--blue, #0D55A2);
+    background-color: white;
+    margin: 1em;
+    padding-left: 1em;
+    color: #0D55A2;
+}
+
+#formulario p{
+    margin-bottom: 0;
+}
+
+#formulario-container {
+    margin-top: 3em;
+    border-radius: 13px;
+    border: 5px solid var(--blue, #0D55A2);
+    background-color: white;
+}
+
+#formulario-container h6 {
+    margin: 1em;
+}
+
+#own_star {
+    margin-left: 1em;
+}
+
+/* preguntarle por qué aunque está por debajo sigue manteniendo la altura */
+#formulario .comentario {
+    height: 99px;
+}
+
+#publicar {
+    font-family: 'Courier Prime', monospace;
+    color: white;
+    font-size: 1.5em;
+    width: 85%;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
