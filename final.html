@@ -50,15 +50,15 @@
     <footer>
         <div class="row" id="contacto_titulo">
             <h1>CONTÁCTANOS</h1>
-            <p>Suscríbete a nuestra Newsletter</p>
+            <p id="suscribirse">Suscríbete a nuestra Newsletter</p>
         </div>
         <div class="row" id="contacto_formulario">
             <div class="col-8">
-                <p>No te pierdas ninguna noticia sobre Beer Free.</p>
+                <p class="news">No te pierdas ninguna noticia sobre Beer Free.</p>
                 <form>
-                    <input type="text" id="fname" name="fname" value="email" required><br>
+                    <input type="text" id="fname" name="fname" value="Email" required ><br>
                 </form>
-                <button type="button" class="btn btn-primary">SUBSCRIBIRME</button>
+                <button type="button" class="btn btn-primary" id="suscribirme">SUBSCRIBIRME</button>
             </div>
             <div class="col-4">
                 <img src="media/pegatina_amigable.png" alt="">
@@ -66,14 +66,18 @@
             </div>
         </div>
         <div class="row" id="contacto_rrss">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
-        <div id="formulario">
-            <p>Email</p>
-            <button type="button" class="btn btn-primary">SUBSCRIBIRME</button>
-        </div>
+            <div class="col-3">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="col-3">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="col-3">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="col-3">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
         <!-- unión con javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
     </footer>

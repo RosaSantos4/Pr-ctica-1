@@ -301,5 +301,21 @@ h1 {
     margin-left: 2.5em;
 }
 
+.fa-brands {
+    color: white;
+}
+
+/* No sé cómo podemos hacer que se centre dentro de la propia columna  */
+#contacto_rrss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+}
+
+
+
+
 
 
