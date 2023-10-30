@@ -314,6 +314,54 @@ h1 {
     margin: 0;
 }
 
+.banda {
+    width: 100%;
+    margin-top: 300px;
+}
+
+#final {
+    margin-bottom: 0;
+    background-color: #00AD93;
+    height: 770px;
+}
+
+#menu_final {
+    background-color: #00AD93;
+}
+
+#menu_final nav ul a {
+    color: white;
+}
+
+#menu_final nav ul a .col-2 i{
+    color: white;
+}
+
+.deco {
+    position: absolute;
+    margin-top: 3em;
+}
+
+#final #texto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* No sé como centrar el texto a la altura del div y si le añades margin top se quita el color de fondo  */
+.white {
+    color: white;
+    margin-top: 3em;
+    text-align: center;
+}
+
+#final #texto p {
+    color: white;
+    text-align: center;
+    margin-left: 20em;
+    margin-right: 20em;
+}
+
 
 
 
