@@ -405,6 +405,45 @@ footer .row * {
     margin-bottom: 2.15em;
 }
 
+#datos #fname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 90%;
+    border-radius: 13px;
+    border: 5px solid var(--blue, #0D55A2);
+    background-color: white;
+    padding-left: 1em;
+    color: #0D55A2;
+    margin: 0;
+}
+
+#datos #personales .row .col-7 {
+    width: 63%;
+}
+
+#personales {
+    margin-bottom: 3em;
+}
+
+#datos #envío .row .col-5 {
+    width: 47%;
+}
+
+#envío {
+    margin-bottom: 3em;
+}
+
+#datos #pago .col-7 {
+    width: 55%;
+} 
+
+#datos #pago .col-4 {
+    width: 39%;
+} 
+
+
 
 
 
