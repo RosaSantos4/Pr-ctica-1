@@ -22,18 +22,17 @@
                     <a href="compra.html">
                         <div class="col-2"><i class="fa-solid fa-cart-shopping"></i></div>
                     </a>
-                    <a href="">
+                    <a href="#producto">
                         <div class="col-2" id="header">Producto</div>
                     </a>
-                    <a href="">
+                    <a href="historia.html">
                         <div class="col-2" id="header">Nuestra historia</div>
                     </a>
-                    <a href="">
+                    <a href="#footer">
                         <div class="col-2" id="header">Contáctanos</div>
                     </a>
                     <a href="">
                         <div class="col-2"><i class="fa-solid fa-bars"></i></div>
-
                     </a>
                 </ul>
             </nav>
@@ -51,11 +50,15 @@
                     <div class="row">
                         <!-- Link producto  -->
                         <div class="col-3" id="pegatina_1">
-                            <img src="media/pegatina_producto.png" alt="">
+                            <a href="#producto">
+                                <img src="media/pegatina_producto.png" alt="">
+                            </a>
                         </div>
                         <!-- Link contacto -->
                         <div class="col-3" id="pegatina">
-                            <img src="media/pegatina_contacto.png" alt="">
+                            <a href="#footer">
+                                <img src="media/pegatina_contacto.png" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="row">
@@ -64,11 +67,15 @@
                     <div class="row">
                         <!-- Link carrito -->
                         <div class="col-3" id="pegatina">
-                            <img src="media/pegatina_carrito.png" alt="">
+                            <a href="compra.html">
+                                <img src="media/pegatina_carrito.png" alt="">
+                            </a>    
                         </div>
                         <!-- Link historia -->
                         <div class="col-3" id="pegatina">
-                            <img src="media/pegatina_historia.png" alt="">
+                            <a href="historia.html">
+                                <img src="media/pegatina_historia.png" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +136,9 @@
                         </div>
                         <!-- Botón para finalizar la compra y que se añade al carrito -->
                         <div>
-                            <button type="button" class="btn btn-primary" id="comprar">COMPRAR</button>
+                            <a href="compra.html">
+                                <button type="button" class="btn btn-primary" id="comprar">COMPRAR</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -191,7 +200,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <div class="row" id="contacto_titulo">
             <h1>CONTÁCTANOS</h1>
             <div class="col-4" id="pegatinas_footer">
