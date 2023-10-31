@@ -129,7 +129,6 @@ h5 {
     color: #FAC100;
 }
 
-/* hay que ver cómo arreglamos el hecho de que el borde vaya por fuera en vez de por dentro */
 .btn-secondary {
     margin-left: 0.5em;
     width: auto;
@@ -398,7 +397,13 @@ footer .row * {
     margin-left: 55em;
 }
 
+#carouselExampleAutoplaying {
+    width: 90%;
+}
 
+#producto_galeria img {
+    margin-bottom: 2.15em;
+}
 
 
 
