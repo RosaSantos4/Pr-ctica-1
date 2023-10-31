@@ -15,12 +15,27 @@
 <body>
     <header>
         <!-- Iconos se ven siempre. Las palabras se despliegan cuando se da al menú hamburguesa -->
-        <div class="row">
-            <div class="col-2" id="header"><i class="fa-solid fa-cart-shopping"></i></div>
-            <div class="col-2" id="header">Producto</div>
-            <div class="col-2" id="header">Nuestra historia</div>
-            <div class="col-2" id="header">Contáctanos</div>
-            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+        <div class="row" id="menu">
+            <nav class="menu">
+                <ul>
+                    <a href="compra.html">
+                        <div class="col-2"><i class="fa-solid fa-cart-shopping"></i></div>
+                    </a>
+                    <a href="">
+                        <div class="col-2" id="header">Producto</div>
+                    </a>
+                    <a href="">
+                        <div class="col-2" id="header">Nuestra historia</div>
+                    </a>
+                    <a href="">
+                        <div class="col-2" id="header">Contáctanos</div>
+                    </a>
+                    <a href="">
+                        <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+
+                    </a>
+                </ul>
+            </nav>
         </div>
     </header>
     <main>
@@ -34,31 +49,31 @@
                 <div class="col-6" id="links">
                     <div class="row">
                         <!-- Link producto  -->
-                        <div class="col-3">
+                        <div class="col-3" id="pegatina_1">
                             <img src="media/pegatina_producto.png" alt="">
                         </div>
                         <!-- Link contacto -->
-                        <div class="col-3">
+                        <div class="col-3" id="pegatina">
                             <img src="media/pegatina_contacto.png" alt="">
                         </div>
                     </div>
                     <div class="row">
-                        <h2>LA CERVEZA + AMIGABLE</h2>
+                        <h2 id="white">LA CERVEZA + AMIGABLE</h2>
                     </div>
                     <div class="row">
                         <!-- Link carrito -->
-                        <div class="col-3">
+                        <div class="col-3" id="pegatina">
                             <img src="media/pegatina_carrito.png" alt="">
                         </div>
                         <!-- Link historia -->
-                        <div class="col-3">
+                        <div class="col-3" id="pegatina">
                             <img src="media/pegatina_historia.png" alt="">
                         </div>
                     </div>
                 </div>
                 <!-- Imagen de producto -->
-                <div class="col-6" id="grafica_cerveza">
-                    <img src="media/cerveza_sin_grafica.png" alt="Botellín Beer Free">
+                <div class="col-6">
+                    <img src="media/cerveza_sin_grafica.png" alt="Botellín Beer Free" id="grafica_cerveza">
                 </div>
             </div>
         </section>
@@ -89,29 +104,31 @@
                     </div>
                     <!-- Descripción del producto -->
                     <div>
-                        <p>
-                            Nos enorgullece decir que somos la primera cerveza sin gluten a la que le importa el look de nuestra cerveza. Pero lo mejor de todo es que no solo somos guapos si no que estamos REBUENOS.
-                            <br>
-                            ¿Qué no te lo crees?
-                            Pruébala.
-                        </p>
+                        <p class="salto_linea">Nos enorgullece decir que somos la primera cerveza sin gluten a la que le importa el look de nuestra cerveza. Pero lo mejor de todo es que no solo somos guapos si no que estamos REBUENOS.</p>
+                        <p>¿Qué no te lo crees?</p>
+                        <p class="bold">Pruébala.</p>
                     </div>
                     <!-- Opción de compra  -->
                     <div id="producto_accion_compra">
-                        <h4>10€</h4>
+                        <h5 class="red">10€</h5>
                         <!-- Seleccionar si 6 o 12 botellas -->
                         <div id="producto_seleccion">
-                            <button type="button" class="btn btn-primary">6</button>
-                            <button type="button" class="btn btn-secondary">12</button>
+                            <button type="button" class="btn btn-primary">6 <img src="media/icono_botella_blanco.png" alt=""></button>
+                            <button type="button" class="btn btn-secondary">12 <img src="media/icono_botella_azul.png" alt=""></button>
                         </div>
                         <!-- Cuantas cajas quieres y el subtotal  -->
                         <div id="producto_cantidad">
-                            <button type="button" class="btn btn-secondary">-1+</button>
-                            <p>SUBTOTAL. 10€</p>
+                            <!-- Había que usar un botón compuesto para que funcionara bien  -->
+                            <div class="btn-group" role="group" aria-label="Basic example">
+                                <button type="button" class="btn btn-outline-primary">-</button>
+                                <button type="button" class="btn" id="special">1</button>
+                                <button type="button" class="btn btn-outline-primary">+</button>
+                              </div>
+                            <p class="subtotal">SUBTOTAL. 10€</p>
                         </div>
                         <!-- Botón para finalizar la compra y que se añade al carrito -->
                         <div>
-                            <button type="button" class="btn btn-primary">COMPRAR</button>
+                            <button type="button" class="btn btn-primary" id="comprar">COMPRAR</button>
                         </div>
                     </div>
                 </div>
@@ -122,41 +139,37 @@
                 </div>
                 <div class="col-6">
                     <div class="row" id="nutri">
-                        <h5>INFORMACIÓN NUTRICIONAL</h5>
-                        <p>
-                            33cl. ALC. 5,5% vol
-                            <br>
-                            Ingredientes: agua, malta de cebada, maíz, lúpulo.
-                            <br>
-                            Adecuada para celiacos.
-                            <br>
-                            Por 100 ml:
-                            Valor energético: 205 kj/49 kcal
-                        </p>
+                        <h6>INFORMACIÓN NUTRICIONAL</h6>
+                        <p class="bold">33cl. ALC. 5,5% vol</p>
+                        <p>Ingredientes: agua, malta de cebada, maíz, lúpulo.</p>  
+                        <p class="red">Adecuada para celiacos.</p>      
+                        <p>Por 100 ml<br>Valor energético: 205 kj/49 kcal</p>                      
                     </div>
                     <div class="row" id="review">
-                        <h5>REVIEWS</h5>
+                        <h6>REVIEWS</h6>
                         <div class="row" id="r1">
-                            <div class="col-4">
-                                <p>María del Mar: <br> Qué rica!! Mi cerveza favvv</p>
+                            <div class="col-6">
+                                <p class="bold">María del Mar:</p>
+                                <p>Qué rica!! Mi cerveza favvv</p>
                             </div>
-                            <div class="col-2" id="formulario">
+                            <div class="col-2" id="formulario-reviews">
                                 <img src="media/starspeque.png" alt="">
                             </div>
                         </div>
                         <div class="row" id="r2">
-                            <div class="col-4">
-                                <p>Ricky: <br> Me encanta el sabor &#128150;</p>
+                            <div class="col-6">
+                                <p class="bold">Ricky:</p>
+                                <p> Me encanta el sabor &#128150;</p>
                             </div>
-                            <div class="col-2" id="formulario">
+                            <div class="col-2" id="formulario-reviews">
                                 <img src="media/starspeque.png" alt="">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-4">
-                    <div id="formulario">
-                        <h5>DEJA TU REVIEW</h5>
+                    <div id="formulario-container">
+                        <h6>DEJA TU REVIEW</h6>
                         <div id="formulario">
                             <p>Nombre</p>
                         </div>
@@ -166,11 +179,11 @@
                         <div id="own_star">
                             <img src="media/starsgris.png" alt="">
                         </div>
-                        <div id="formulario">
+                        <div id="formulario" class="comentario">
                             <p>Comentario</p>
                         </div>
-                        <div id="boton">
-                            <button type="button" class="btn btn-primary">PUBLICAR</button>
+                        <div>
+                            <button type="button" class="btn btn-primary" id="publicar">PUBLICAR</button>
                         </div>
                     </div>
                 </div>
@@ -180,15 +193,15 @@
     <footer>
         <div class="row" id="contacto_titulo">
             <h1>CONTÁCTANOS</h1>
-            <p>Suscríbete a nuestra Newsletter</p>
+            <p id="suscribirse">Suscríbete a nuestra Newsletter</p>
         </div>
         <div class="row" id="contacto_formulario">
             <div class="col-8">
-                <p>No te pierdas ninguna noticia sobre Beer Free.</p>
+                <p class="news">No te pierdas ninguna noticia sobre Beer Free.</p>
                 <form>
-                    <input type="text" id="fname" name="fname" value="email" required><br>
+                    <input type="text" id="fname" name="fname" value="Email" required ><br>
                 </form>
-                <button type="button" class="btn btn-primary">SUBSCRIBIRME</button>
+                <button type="button" class="btn btn-primary" id="suscribirme">SUBSCRIBIRME</button>
             </div>
             <div class="col-4">
                 <img src="media/pegatina_amigable.png" alt="">
@@ -196,10 +209,18 @@
             </div>
         </div>
         <div class="row" id="contacto_rrss">
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-youtube"></i>
-            <i class="fa-brands fa-x-twitter"></i>
-            <i class="fa-brands fa-facebook"></i>
+            <div class="col-3">
+                <i class="fa-brands fa-instagram"></i>
+            </div>
+            <div class="col-3">
+                <i class="fa-brands fa-youtube"></i>
+            </div>
+            <div class="col-3">
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+            <div class="col-3">
+                <i class="fa-brands fa-facebook"></i>
+            </div>
         <!-- unión con javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
     </footer>
