@@ -425,6 +425,7 @@ footer .row * {
 
 #personales {
     margin-bottom: 3em;
+    margin-top: 3em;
 }
 
 #datos #envío .row .col-5 {
@@ -467,6 +468,50 @@ footer .row * {
 
 #botones_continuar {
     margin-top: 3em;
+}
+
+#resumen {
+    margin-top: 3em;
+}
+
+#resumen h3 {
+    color: #FAC100;
+}
+
+#cantidad {
+    display: flex;
+    align-items: baseline;
+}
+
+#cantidad h3 {
+    margin-right: 0.2em;
+} 
+
+#cantidad img {
+   margin-right: 0.5em;
+}
+
+#cantidad p {
+    font-weight: bold;
+}
+
+#total_pago {
+    background-color: #0D55A2;
+}
+
+#total_pago p, #total_pago h4 {
+    color: white;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0.5em;
+    margin-bottom: 0;
+}
+
+.iva {
+    margin-left: 1em;
 }
 
 
