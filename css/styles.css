@@ -41,7 +41,8 @@ nav.menu ul a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #grafica {
@@ -144,8 +145,6 @@ h5 {
 .btn-group {
     margin-top: 0.5em;
     font-family: 'Courier Prime', monospace;
-    /* border-radius: 13px;
-    border: 5px solid var(--blue, #0D55A2); */
     background-color: white;
     margin-right: 1em;
 }
@@ -158,11 +157,10 @@ h5 {
     padding-bottom: 0;
 }
 
-/* Preguntarle a adrian por qué no funciona esto  */
 #special { 
-    border-color:#0D55A2;
-    border-bottom: 5px solid;   
-    border: 5px solid ;
+    border-bottom: 5px solid var(--blue, #0D55A2);  
+    border-top: 5px solid var(--blue, #0D55A2); 
+    font-size: 1.75em;
 }
 
 #producto_cantidad {
@@ -293,12 +291,28 @@ h1 {
     color: #0D55A2;
 }
 
+ #formulario-container #fname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 90%;
+    border-radius: 13px;
+    border: 5px solid var(--blue, #0D55A2);
+    background-color: white;
+    margin: 1em; 
+    margin-bottom: 0;  
+    padding-left: 1em;
+    color: #0D55A2;
+}
+
 #suscribirme {
     font-family: 'Courier Prime', monospace;
     color: white;
     font-size: 1.5em;
     width: auto;
     margin-left: 2.5em;
+    margin-bottom: 3em;
 }
 
 .fa-brands {
@@ -312,6 +326,8 @@ h1 {
     justify-content: center;
     list-style: none;
     margin: 0;
+    padding-bottom: 2em;
+    --bs-gutter-x: 1.5rem;
 }
 
 .banda {
@@ -327,6 +343,8 @@ h1 {
 
 #menu_final {
     background-color: #00AD93;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 #menu_final nav ul a {
@@ -348,7 +366,6 @@ h1 {
     flex-direction: column;
 }
 
-/* No sé como centrar el texto a la altura del div y si le añades margin top se quita el color de fondo  */
 .white {
     color: white;
     margin-top: 3em;
@@ -362,10 +379,29 @@ h1 {
     margin-right: 20em;
 }
 
-
 footer .row * {
     width: auto;
 }
+
+.row {
+    --bs-gutter-x: 0;
+}
+
+#final #texto a {
+    color:#FAC100;
+    text-decoration: none;
+    font-family: 'Courier Prime', monospace;
+}
+
+#pegatinas_footer {
+    position: absolute;
+    margin-left: 55em;
+}
+
+
+
+
+
 
 
 
