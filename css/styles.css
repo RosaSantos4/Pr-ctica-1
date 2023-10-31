@@ -43,6 +43,10 @@ nav.menu ul a {
     justify-content: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 
 #grafica {
@@ -397,42 +401,6 @@ footer .row * {
     position: absolute;
     margin-left: 55em;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
