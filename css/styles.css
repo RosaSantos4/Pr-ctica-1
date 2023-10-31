@@ -443,6 +443,31 @@ footer .row * {
     width: 39%;
 } 
 
+#datos #pago .col-8 {
+    font-size: 0.8em;
+}
+
+#pagar {
+    font-family: 'Courier Prime', monospace;
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    height: 102%;
+    margin-left: 2.5em;
+}
+
+#volver {
+    background-color: white;
+    font-family: 'Courier Prime', monospace;
+    color:#0D55A2;
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0; 
+}
+
+#botones_continuar {
+    margin-top: 3em;
+}
 
 
 
