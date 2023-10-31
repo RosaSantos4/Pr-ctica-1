@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/26e0145f92.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>PRACTICA 1</title>
+</head>
+<body>
+    <header>
+        <!-- Iconos se ven siempre. Las palabras se despliegan cuando se da al menú hamburguesa -->
+        <div class="row">
+            <div class="col-2" id="header"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="col-2" id="header">Producto</div>
+            <div class="col-2" id="header">Nuestra historia</div>
+            <div class="col-2" id="header">Contáctanos</div>
+            <div class="col-2"><i class="fa-solid fa-bars"></i></div>
+        </div>
+    </header>
+    <main>
+        <!-- Scroll horizontal: historia_h. A partir de ipad, scroll vertical: historia_v-->
+        <section class="container" id="historia_h">
+            <div class="row flex-row flex-nowrap" id="historia_h_1fila">
+                <!-- Título página -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h3>NUESTRA HISTORIA</h3>
+                    <img src="media/deco_amarillo.png" alt="">
+                </div>
+                <!-- La mejor acompañante -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="media/cerveza1.png" alt="">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>LA MEJOR ACOMPAÑANTE</h4>
+                    <p>
+                        A lo largo de la historia, la cerveza ha estado presente desde mesas 
+                        de madera hasta banquetes reales.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="media/cerveza2.png" alt="">
+                </div>
+                <!-- Celiaco -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>¿celiaco?</h4>
+                    <p>
+                        Pero la cerveza no la podía tomar todo el mundo y había que buscar una solución. 
+                        Por eso...  
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="media/celiaco.png" alt="">
+                </div>
+            </div>
+            <div class="row flex-row flex-nowrap" id="historia_h_brazo">
+                <img src="media/brazo.png" alt="">
+            </div>
+            <div class="row flex-row flex-nowrap" id="historia_h_3fila">
+                <!-- Trigo -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>mezclando agua y cereales</h4>
+                    <p>
+                        La primera cerveza apareció en Sumeria donde mezclaron agua 
+                        con cereales y su fermentación combirtió esa mezcla en una bebida alcohólica.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="media/trigo.png" alt="">
+                </div>
+                <!-- Dioses -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>la bebida de dioses</h4>
+                    <p>
+                        La cerveza saltó el charco y ahora podemos encontrarla 
+                        en cada punta del planeta.
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="media/mundo.png" alt="">
+                </div>
+                <!-- Llega Beer Free  -->
+                <div class="col-12 col-md-4 col-lg-3">
+                    <img src="media/barril.png" alt="">
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">
+                    <h4>¡llega beer free!</h4>
+                    <p>
+                        La primera cerveza sin gluten con un look rechulón
+                    </p>
+                </div>
+            </div>
+        </section>
+<!-- Vertical para pantallas pequeñas
+        <section class="container" id="historia_v">
+            <div class="row" id="historia_v_titulo">
+                <h3>NUESTRA HISTORIA</h3>
+                <img src="media/deco_amarillo.png" alt="">
+            </div>
+            <div class="row" id="historia_v_1fila">
+                <h4>mezclando agua y cereales</h4>
+                <p>
+                    La primera cerveza apareció en Sumeria donde mezclaron agua 
+                    con cereales y su fermentación combirtió esa mezcla en una bebida alcohólica.
+                </p>
+            </div>
+            <div class="row" id="historia_v_1fila_img">
+                <img src="media/brazo_1.png" alt="">
+                <img src="media/trigo.png" alt="">
+            </div>
+            <div class="row" id="historia_v_2fila">
+                <h4>LA MEJOR ACOMPAÑANTE</h4>
+                <p>
+                    A lo largo de la historia, la cerveza ha estado presente desde mesas 
+                    de madera hasta banquetes reales.
+                </p>
+            </div>
+            <div class="row" id="historia_v_2fila_img">
+                <img src="media/cerveza_completa.png" alt="">
+                <img src="media/brazo_2.png" alt="">
+            </div>
+            <div class="row" id="historia_v_3fila">
+                <h4>la bebida de dioses</h4>
+                <p>
+                    La cerveza saltó el charco y ahora podemos encontrarla 
+                    en cada punta del planeta.
+                </p>
+            </div>
+            <div class="row" id="historia_v_3fila_img">
+                <img src="media/brazo_3.png" alt="">
+                <img src="media/mundo.png" alt="">
+            </div>
+            <div class="row" id="historia_v_4fila">
+                <h4>¿celiaco?</h4>
+                <p>
+                    Pero la cerveza no la podía tomar todo el mundo y había que buscar una solución. 
+                    Por eso...  
+                </p>
+            </div>
+            <div class="row" id="historia_v_4fila_img">
+                <img src="media/celiaco.png" alt="">
+                <img src="media/brazo_4.png" alt="">
+            </div>
+            <div class="row" id="historia_v_5fila">
+                <h4>¡llega beer free!</h4>
+                <p>
+                    La primera cerveza sin gluten con un look rechulón
+                </p>
+            </div>
+            <div class="row" id="historia_v_5fila_img">
+                <img src="media/barril.png" alt="">
+            </div>
+        </section> -->
+    </main>
+</body>
+</html>
