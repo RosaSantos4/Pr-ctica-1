@@ -497,6 +497,10 @@ footer .row * {
 
 #total_pago {
     background-color: #0D55A2;
+    width: 90%;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
 }
 
 #total_pago p, #total_pago h4 {
@@ -506,7 +510,7 @@ footer .row * {
 .total {
     font-weight: bold;
     font-size: 2em;
-    margin: 0.5em;
+    margin-left: 0.5em; 
     margin-bottom: 0;
 }
 
@@ -514,7 +518,29 @@ footer .row * {
     margin-left: 1em;
 }
 
+/* no sé por qué no se quita el reborde de la imagen */
+#cortadas {
+    margin: 0;
+    padding: 0;
+    right: 300px;
+}
 
+#minimal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+#minimal div {
+    display: flex;
+}
+
+#minimal div p {
+    padding: 1em;
+    text-align: center;
+}
 
 
 
