@@ -242,7 +242,7 @@ h6 {
 }
 
 /* preguntarle por qué aunque está por debajo sigue manteniendo la altura */
-#formulario .comentario {
+#formulario-container .comentario {
     height: 99px;
 }
 
@@ -326,7 +326,6 @@ h1 {
     color: white;
 }
 
-/* No sé cómo podemos hacer que se centre dentro de la propia columna  */
 #contacto_rrss {
     display: flex;
     align-items: center;
@@ -526,11 +525,10 @@ footer .row * {
     margin-left: 1em;
 }
 
-/* no sé por qué no se quita el reborde de la imagen */
 #cortadas {
-    margin: 0;
+    margin-bottom: 0;
+    margin-right: 0;
     padding: 0;
-    right: 300px;
 }
 
 #minimal {
@@ -548,6 +546,10 @@ footer .row * {
 #minimal div p {
     padding: 1em;
     text-align: center;
+}
+
+#sin_margen {
+    margin-bottom: 0;
 }
 
 
