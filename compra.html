@@ -18,29 +18,28 @@
         <!-- Iconos se ven siempre. Las palabras se despliegan cuando se da al menú hamburguesa -->
         <div class="row" id="menu">
             <nav class="menu">
-                <ul>
+                <ul id="iconos">
                     <a href="compra.html">
                         <div class="col-2"><i class="fa-solid fa-cart-shopping"></i></div>
                     </a>
                     <a href="">
                         <div class="col-2" id="header">Producto</div>
                     </a>
-                    <a href="">
+                    <a href="historia.html">
                         <div class="col-2" id="header">Nuestra historia</div>
                     </a>
                     <a href="">
                         <div class="col-2" id="header">Contáctanos</div>
                     </a>
-                    <a href="">
+                    <a href="" id="hamburger">
                         <div class="col-2"><i class="fa-solid fa-bars"></i></div>
-
                     </a>
                 </ul>
             </nav>
         </div>
-    </header>   
-    <main>
-        <section class="container">
+    </header>  
+    <main id="sin_margen">
+        <section class="container" id="cortadas">
             <div class="row">
                 <div class="col-8" id="datos">
                     <div class="row" id="personales">
@@ -56,12 +55,12 @@
                             </form>
                         </div>
                         <div class="row">
-                            <div class="col-2">
+                            <div class="col-4">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Prefijo" required><br>
                                 </form>
                             </div>
-                            <div class="col-6">
+                            <div class="col-7">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Teléfono móvil" required><br>
                                 </form>
@@ -87,24 +86,24 @@
                             </form>
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-5">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Código postal" required><br>
                                 </form>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Ciudad" required><br>
                                 </form>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-5">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Provincia" required><br>
                                 </form>
                             </div>
-                            <div class="col-4">
+                            <div class="col-5">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="País" required><br>
                                 </form>
@@ -130,7 +129,7 @@
                             </form>
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-7">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Fecha de vencimiento (MM/AA)" required><br>
                                 </form>
@@ -141,20 +140,18 @@
                                 </form>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <p>He podido leer y entiendo la información sobre el uso de mis datos personales explicada en la <a href="">Política de Privacidad</a></p>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="row">
+                    <div class="row" id="botones_continuar">
                         <div class="col-5">
-                            <p>He podido leer y entiendo la información sobre el uso de mis datos personales explicada en la Política de Privacidad</p>
+                            <button type="button" class="btn btn-secondary" id="volver">VOLVER</button>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-secondary">Volver</button>
-                        </div>
-                        <div class="col-4">
-                            <button type="button" class="btn btn-primary">Pagar</button>
+                        <div class="col-5">
+                            <button type="button" class="btn btn-primary" id="pagar">PAGAR</button>
                         </div>
                     </div>
                 </div>
@@ -162,7 +159,7 @@
             <div class="col-4" id="resumen">
                 <div class="row">
                     <h4>Resumen</h4>
-                    <div class="col-1">
+                    <div class="col-1" id="cantidad">
                         <h3>6</h3>
                         <img src="media/botellita_vector.png" alt="vector botella">
                         <p>x2</p>
@@ -172,10 +169,10 @@
                     </div>
                 </div>
                     
-                <div class="row">
-                    <div class="col-2">
-                        <p>Total</p>
-                        <p>Con I.V.A</p>
+                <div class="row" id="total_pago">
+                    <div class="col-4">
+                        <p class="total">TOTAL</p>
+                        <p class="iva">Con I.V.A</p>
                     </div>
                    <div class="col-2">
                     <h4>20€</h4>
@@ -183,14 +180,14 @@
                 </div>
 
                 <div class="row">
-                    <img src="media/manos_cortadas.png" alt="manos cortadas">
+                    <img src="media/manos_cortadas.png" alt="manos cortadas" >
                 </div>
             </div>
         </div>
    
         </section>
     </main>
-    <footer> 
+    <footer id="minimal"> 
         <div>
             <p>Condiciones de compra</p>
             <p> Política de Privacidad</p>
