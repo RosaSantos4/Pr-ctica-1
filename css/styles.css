@@ -507,19 +507,74 @@ footer .row * {
 
 
 
-#historia_h_1fila #acompanante h4 {
+#historia_h_1fila #acompanante h5 {
     color: #FAC100;
 }
 
-#historia_h_1fila #celiaco h4 {
+#historia_h_1fila #celiaco h5 {
     color: #EC5F44;
 }
 
-#historia_h_3fila #cereal h4 {
+#historia_h_3fila #cereal h5 {
     color: #EC5F44;
 }
 
-#historia_h_3fila #dios h4 {
+#historia_h_3fila #dios h5 {
     color: #0D55A2;
 }
 
+#historia_h {
+    /* para que la imagen del brazo pueda ir a sangre con la pantalla */
+    padding: 0;
+    margin: 3.5em 0 3.5em 0;
+    height: 100%;
+}
+
+#historia_h_1fila {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 200%;
+}
+
+#historia_h_1fila div {
+    display: flex;
+    width: min-content;
+    align-items: center;
+}
+
+/* titulo página */
+#nuestrahistoria {
+    padding-left: 4em;
+}
+/* img que acompaña titulo */
+#nuestrahistoria img {
+    width: 4em;
+    height: 4em;
+    position: relative;
+    top: 1em;
+    right: 1.5em;
+}
+
+#historia_text {
+    flex-direction: column;
+}
+
+#historia_img {
+    padding: 2em;
+}
+
+#historia_h_brazo {
+    width: 200%;
+}
+
+#historia_h_3fila {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 200%;
+}
+
+#historia_h_3fila div {
+    display: flex;
+    width: min-content;
+    align-items: center;
+}
