@@ -18,7 +18,6 @@ form {
 
 nav.menu ul {
     display: flex;
-    align-items: center;
     list-style: none;
     margin: 0;
 } 
@@ -31,11 +30,18 @@ nav.menu ul a {
     color: black;
 }
 
+/* #iconos {
+    display: none;
+}
+
+nav.menu:hover #iconos {
+    display: flex;
+} */
+
+
 .fa-solid {
     color: #0D55A2;
 }
-
-/* Falta hacer que el menú aparezca al hacer scroll y se quede fijo en la pantalla (usarlo de mad tat)  */
 
 #menu {
     display: flex;
@@ -133,7 +139,17 @@ h5 {
     color: #FAC100;
 }
 
-/* hay que ver cómo arreglamos el hecho de que el borde vaya por fuera en vez de por dentro */
+.btn-primary:hover {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 13px;
+    border-color: #FAC100;
+    background-color:  #FAC100;
+    font-size: 2em;
+    color: white;
+}
+
 .btn-secondary {
     margin-left: 0.5em;
     width: auto;
@@ -146,6 +162,18 @@ h5 {
     color: #FAC100;
 }
 
+.btn-secondary:hover {
+    margin-left: 0.5em;
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 13px;
+    border: 5px solid var(--blue, #FAC100);
+    background-color:white ;
+    font-size: 2em;
+    color: #0D55A2;
+}
+
 .btn-group {
     margin-top: 0.5em;
     font-family: 'Courier Prime', monospace;
@@ -156,6 +184,15 @@ h5 {
 .btn-outline-primary {
     border: 5px solid var(--blue, #0D55A2);
     color: black;
+    font-size: 1.75em;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.btn-outline-primary:hover {
+    border: 5px solid var(--blue, #0D55A2);
+    color: white;
+    background-color: #0D55A2;
     font-size: 1.75em;
     padding-top: 0;
     padding-bottom: 0;
@@ -239,7 +276,7 @@ h6 {
 }
 
 /* preguntarle por qué aunque está por debajo sigue manteniendo la altura */
-#formulario .comentario {
+#formulario-container .comentario {
     height: 99px;
 }
 
@@ -319,11 +356,20 @@ h1 {
     margin-bottom: 3em;
 }
 
+#suscribirme:hover {
+    font-family: 'Courier Prime', monospace;
+    color: #0D55A2;
+    background-color: white;
+    font-size: 1.5em;
+    width: auto;
+    margin-left: 2.5em;
+    margin-bottom: 3em;
+}
+
 .fa-brands {
     color: white;
 }
 
-/* No sé cómo podemos hacer que se centre dentro de la propia columna  */
 #contacto_rrss {
     display: flex;
     align-items: center;
@@ -402,108 +448,173 @@ footer .row * {
     margin-left: 55em;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#carouselExampleAutoplaying {
+    width: 90%;
+}
+
+#producto_galeria img {
+    margin-bottom: 2.15em;
+}
+
+#datos #fname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    width: 90%;
+    border-radius: 13px;
+    border: 5px solid var(--blue, #0D55A2);
+    background-color: white;
+    padding-left: 1em;
+    color: #0D55A2;
+    margin: 0;
+}
+
+#datos #personales .row .col-7 {
+    width: 63%;
+}
+
+#personales {
+    margin-bottom: 3em;
+    margin-top: 3em;
+}
+
+#datos #envío .row .col-5 {
+    width: 47%;
+}
+
+#envío {
+    margin-bottom: 3em;
+}
+
+#datos #pago .col-7 {
+    width: 55%;
+} 
+
+#datos #pago .col-4 {
+    width: 39%;
+} 
+
+#datos #pago .col-8 {
+    font-size: 0.8em;
+}
+
+#pagar {
+    font-family: 'Courier Prime', monospace;
+    color: white;
+    font-size: 1.5em;
+    width: 100%;
+    height: 102%;
+    margin-left: 2.5em;
+}
+
+#volver {
+    background-color: white;
+    font-family: 'Courier Prime', monospace;
+    color:#0D55A2;
+    font-size: 1.5em;
+    width: 100%;
+    margin: 0; 
+}
+
+#botones_continuar {
+    margin-top: 3em;
+}
+
+#resumen {
+    margin-top: 3em;
+}
+
+#resumen h3 {
+    color: #FAC100;
+}
+
+#cantidad {
+    display: flex;
+    align-items: baseline;
+}
+
+#cantidad h3 {
+    margin-right: 0.2em;
+} 
+
+#cantidad img {
+   margin-right: 0.5em;
+}
+
+#cantidad p {
+    font-weight: bold;
+}
+
+#total_pago {
+    background-color: #0D55A2;
+    width: 90%;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+}
+
+#total_pago p, #total_pago h4 {
+    color: white;
+}
+
+.total {
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 0.5em; 
+    margin-bottom: 0;
+}
+
+.iva {
+    margin-left: 1em;
+}
+
+#cortadas {
+    margin-bottom: 0;
+    margin-right: 0;
+    padding: 0;
+}
+
+#minimal {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: white;
+    justify-content: center;
+}
+
+#minimal div {
+    display: flex;
+}
+
+#minimal div p {
+    padding: 1em;
+    text-align: center;
+}
+
+#sin_margen {
+    margin-bottom: 0;
+}
+
+#pago p a {
+    color:#FAC100;
+    text-decoration: none;
+    font-family: 'Courier Prime', monospace;
+}
+
+/* ANIMACIONES  */
+
+#pegatina_1:hover {
+    transform: rotate(10deg);
+}
+
+#pegatina:hover {
+    transform: rotate(-10deg);
+}
+
+#grafica_cerveza:hover {
+    transform: rotate(-10deg);
+}
 
 
 /* TIPOS HISTORIA HTML */
