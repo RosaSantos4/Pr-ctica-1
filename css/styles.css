@@ -506,7 +506,7 @@ footer .row * {
 
 
 
-
+/* TIPOS HISTORIA HTML */
 #historia_h_1fila #acompanante h5 {
     color: #FAC100;
 }
@@ -536,8 +536,10 @@ footer .row * {
 
 #historia_img {
     padding: 2em;
+    padding-top: 0;
 }
 
+/* 1 FILA  */
 #historia_h_1fila {
     align-items: flex-start;
     justify-content: space-between;
@@ -553,6 +555,7 @@ footer .row * {
 #nuestrahistoria {
     padding-left: 4em;
 }
+
 /* img que acompaña titulo */
 #nuestrahistoria img {
     width: 4em;
@@ -569,22 +572,33 @@ footer .row * {
     margin-right: 5em;
 }
 
+#celiaco{
+padding-top: 3em;
+}
+
 #celiaco div:first-child {
     width: 20em;
     align-items: flex-start;
 }
 
 #celiaco div:last-child img {
-    height: 5em;
+    height: 8em;
     position: relative;
     right: 6em;
-    bottom: 2.5em;
+    bottom: 3em;
 }
 
+/* BRAZO */
 #historia_h_brazo {
-    width: 150%;
+    width: 190%;
 }
 
+#historia_h_brazo img{
+    position: relative;
+    bottom: 14em;
+}
+
+/* 3FILA */
 #historia_h_3fila {
     align-items: flex-start;
     justify-content: space-between;
