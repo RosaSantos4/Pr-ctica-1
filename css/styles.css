@@ -49,6 +49,10 @@ nav.menu:hover #iconos {
     justify-content: center;
     padding-top: 1em;
     padding-bottom: 1em;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
 }
 
 #grafica {
@@ -598,22 +602,6 @@ footer .row * {
     font-family: 'Courier Prime', monospace;
 }
 
-#historia_h_1fila #acompanante h4 {
-    color: #FAC100;
-}
-
-#historia_h_1fila #celiaco h4 {
-    color: #EC5F44;
-}
-
-#historia_h_3fila #cereal h4 {
-    color: #EC5F44;
-}
-
-#historia_h_3fila #dios h4 {
-    color: #0D55A2;
-}
-
 /* ANIMACIONES  */
 
 #pegatina_1:hover {
@@ -626,4 +614,117 @@ footer .row * {
 
 #grafica_cerveza:hover {
     transform: rotate(-10deg);
+}
+
+
+/* TIPOS HISTORIA HTML */
+#historia_h_1fila #acompanante h5 {
+    color: #FAC100;
+}
+
+#historia_h_1fila #celiaco h5 {
+    color: #EC5F44;
+}
+
+#historia_h_3fila #cereal h5 {
+    color: #EC5F44;
+}
+
+#historia_h_3fila #dios h5 {
+    color: #0D55A2;
+}
+
+#historia_h {
+    /* para que la imagen del brazo pueda ir a sangre con la pantalla */
+    padding: 0;
+    margin: 3.5em 0 3.5em 0;
+    height: 100%;
+}
+
+#historia_text {
+    flex-direction: column;
+}
+
+#historia_img {
+    padding: 2em;
+    padding-top: 0;
+}
+
+/* 1 FILA  */
+#historia_h_1fila {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 150%;
+}
+
+#historia_h_1fila div {
+    display: flex;
+    width: min-content;
+}
+
+/* titulo página */
+#nuestrahistoria {
+    padding-left: 4em;
+}
+
+/* img que acompaña titulo */
+#nuestrahistoria img {
+    width: 4em;
+    height: 4em;
+    position: relative;
+    top: 0.25em;
+    right: 0.25em;
+}
+
+#acompanante div:nth-child(3) img {
+    height: 10em;
+    position: relative;
+    top: 4em;
+    margin-right: 5em;
+}
+
+#celiaco{
+padding-top: 3em;
+}
+
+#celiaco div:first-child {
+    width: 20em;
+    align-items: flex-start;
+}
+
+#celiaco div:last-child img {
+    height: 8em;
+    position: relative;
+    right: 6em;
+    bottom: 3em;
+}
+
+/* BRAZO */
+#historia_h_brazo {
+    width: 190%;
+    position: relative;
+    bottom: 14em;
+}
+
+/* 3FILA */
+#historia_h_3fila {
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 150%;
+    position: relative;
+    bottom: 5em;
+}
+
+#historia_h_3fila div {
+    display: flex;
+    width: min-content;
+}
+
+#cereal {
+    padding-left: 4em;
+    align-items: normal;
+}
+
+#cereal div:first-child {
+    width: 25em;
 }
