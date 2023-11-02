@@ -592,7 +592,11 @@ footer .row * {
     margin-bottom: 0;
 }
 
-
+#pago p a {
+    color:#FAC100;
+    text-decoration: none;
+    font-family: 'Courier Prime', monospace;
+}
 
 #historia_h_1fila #acompanante h4 {
     color: #FAC100;
@@ -610,3 +614,16 @@ footer .row * {
     color: #0D55A2;
 }
 
+/* ANIMACIONES  */
+
+#pegatina_1:hover {
+    transform: rotate(10deg);
+}
+
+#pegatina:hover {
+    transform: rotate(-10deg);
+}
+
+#grafica_cerveza:hover {
+    transform: rotate(-10deg);
+}
