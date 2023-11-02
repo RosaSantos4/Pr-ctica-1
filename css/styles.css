@@ -530,16 +530,23 @@ footer .row * {
     height: 100%;
 }
 
+#historia_text {
+    flex-direction: column;
+}
+
+#historia_img {
+    padding: 2em;
+}
+
 #historia_h_1fila {
     align-items: flex-start;
     justify-content: space-between;
-    width: 200%;
+    width: 150%;
 }
 
 #historia_h_1fila div {
     display: flex;
     width: min-content;
-    align-items: center;
 }
 
 /* titulo página */
@@ -551,30 +558,40 @@ footer .row * {
     width: 4em;
     height: 4em;
     position: relative;
-    top: 1em;
-    right: 1.5em;
+    top: 0.25em;
+    right: 0.25em;
 }
 
-#historia_text {
-    flex-direction: column;
+#acompanante div:nth-child(3) img {
+    height: 10em;
+    position: relative;
+    top: 4em;
+    margin-right: 5em;
 }
 
-#historia_img {
-    padding: 2em;
+#celiaco div:first-child {
+    width: 20em;
+    align-items: flex-start;
+}
+
+#celiaco div:last-child img {
+    height: 5em;
+    position: relative;
+    right: 6em;
+    bottom: 2.5em;
 }
 
 #historia_h_brazo {
-    width: 200%;
+    width: 150%;
 }
 
 #historia_h_3fila {
     align-items: flex-start;
     justify-content: space-between;
-    width: 200%;
+    width: 150%;
 }
 
 #historia_h_3fila div {
     display: flex;
     width: min-content;
-    align-items: center;
 }
