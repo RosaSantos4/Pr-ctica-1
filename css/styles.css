@@ -591,9 +591,6 @@ padding-top: 3em;
 /* BRAZO */
 #historia_h_brazo {
     width: 190%;
-}
-
-#historia_h_brazo img{
     position: relative;
     bottom: 14em;
 }
@@ -603,9 +600,20 @@ padding-top: 3em;
     align-items: flex-start;
     justify-content: space-between;
     width: 150%;
+    position: relative;
+    bottom: 5em;
 }
 
 #historia_h_3fila div {
     display: flex;
     width: min-content;
+}
+
+#cereal {
+    padding-left: 4em;
+    align-items: normal;
+}
+
+#cereal div:first-child {
+    width: 25em;
 }
