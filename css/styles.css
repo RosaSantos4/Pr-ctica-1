@@ -313,7 +313,7 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 55%;
+    width: 100%;
     border-radius: 13px;
     border: 5px solid var(--blue, #0D55A2);
     background-color: white;
@@ -373,8 +373,7 @@ h1 {
 
 .banda {
     width: 100%;
-    /* margin-top: 300px; */
-    position: sticky;
+    position: relative;
 }
 
 #final {
@@ -800,11 +799,11 @@ padding-top: 3em;
     }
 
     .banda {
-        margin-top: 100px;
+        margin-top: 115px;
     }
   }
 
-  @media only screen and (max-width: 800px) {
+  @media only screen and (max-width: 820px) {
 
     #final #texto p {
         margin-right: 6em;
@@ -816,7 +815,7 @@ padding-top: 3em;
     }
 
     .banda {
-        margin-top: 110px;
+        margin-top: 120px;
     }
 
     #final {
@@ -833,10 +832,53 @@ padding-top: 3em;
 
   }
 
+  @media only screen and (max-width: 700px) {
 
+    h1 {
+        font-size: 2.3em ;
+    }
 
+    #final #texto h3 {
+        font-size: 1.8em;
+        margin-top: 5em;
+    }
 
-  @media only screen and (max-width: 500px) {
+    #contacto_titulo {
+        flex-direction: column;
+    }
+
+    #suscribirse {
+        font-size: 1em;
+    }
+
+    .banda {
+        margin-top: 35px;
+    }
+
+    #final {
+        height: 380px;
+    }
+
+    #contacto_formulario p{
+        font-size: 0.7em;
+    }
+
+    .news {
+        padding-left: 3em;
+    }
+
+    #fname {
+        margin-left: 2em;
+        font-size: 0.8em;
+    }
+
+    #suscribirme {
+    font-size: 1em;
+    margin-left: 1.5em;
+    }
+  }
+
+  @media only screen and (max-width: 520px) {
 
     #final #texto p {
         margin-right: 3em;
@@ -852,31 +894,25 @@ padding-top: 3em;
         margin-top: 6em;
     }
 
-    #final {
-        height: 380px;
-    }
-
     .banda {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 
     #suscribirse {
         font-size: 1em;
     }
+  }
 
-    #contacto_formulario p{
-        font-size: 0.7em;
+  @media only screen and (max-width: 450px) {
+
+    .banda {
+        display: none;
     }
 
-    .news {
-        padding-left: 3em;
+    #final #texto h3 {
+        font-size: 1.3em;
     }
 
-    #fname {
-        width: auto;
-        margin-left: 2em;
-        font-size: 0.8em;
-    }
   }
 
   
