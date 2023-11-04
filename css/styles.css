@@ -727,9 +727,10 @@ padding-top: 3em;
 
 /* MEDIA QUERIES  */
 
-/* Pantalla de finalización de compra  */
 
 @media only screen and (max-width: 1200px) {
+    /* Pantalla de finalización de compra  */
+
     #pegatinas_footer {
         position: absolute;
         margin-left: 40em;
@@ -767,9 +768,57 @@ padding-top: 3em;
         font-size: 6em ;
     }
 
+    /* Pantalla de compra  */
+
+    .container {
+        margin-left: 6em;
+    }
+
+    #botones_continuar {
+        margin-bottom: 1em;
+    }
+    /* no sé por qué pasa otra vez lo de la imagen del reborde  */
+
   }
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1060px) {
+
+    /* Pantalla de compra  */
+
+    .container {
+        margin-left: 3em;
+    }
+  }
+
+@media only screen and (max-width: 992px) {
+
+    /* Pantalla de compra  */
+
+    .container {
+        margin-left: 3em;
+        margin-top: 3em;
+    }
+
+    #total_pago {
+        width: 220%;
+    }
+
+    #manos_cortadas {
+        width: 270%;
+    }
+
+    #cortadas #fname {
+        font-size: 0.8em;
+    }
+
+    #cortadas h4 {
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+
+    /* Pantalla de finalización de compra  */
 
     #final #texto p {
         margin-bottom: 2em;
@@ -801,9 +850,34 @@ padding-top: 3em;
     .banda {
         margin-top: 115px;
     }
+
+    /* Pantalla de compra  */
+    #cerveza_pequeña img {
+        width: 1300%;
+    }
+
+    #manos_cortadas {
+        display: none;
+    }
+
+    #cantidad h3 {
+        font-size: 3em;
+    }
+
+    #total_pago {
+        width: 200%;
+    }
+
+    .total {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
   }
 
-  @media only screen and (max-width: 820px) {
+@media only screen and (max-width: 820px) {
+
+    /* Pantalla de finalización de compra  */
 
     #final #texto p {
         margin-right: 6em;
@@ -832,7 +906,9 @@ padding-top: 3em;
 
   }
 
-  @media only screen and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
+
+    /* Pantalla de finalización de compra  */
 
     h1 {
         font-size: 2.3em ;
@@ -878,7 +954,9 @@ padding-top: 3em;
     }
   }
 
-  @media only screen and (max-width: 520px) {
+@media only screen and (max-width: 520px) {
+
+    /* Pantalla de finalización de compra  */
 
     #final #texto p {
         margin-right: 3em;
@@ -905,6 +983,8 @@ padding-top: 3em;
 
   @media only screen and (max-width: 450px) {
 
+    /* Pantalla de finalización de compra  */
+
     .banda {
         display: none;
     }
@@ -915,4 +995,20 @@ padding-top: 3em;
 
   }
 
-  
+@media only screen and (max-width: 400px) {
+
+    /* Pantalla de finalización de compra  */
+
+    #fname {
+        width: 90%;
+    }
+
+    #final #texto h3 {
+        font-size: 1em;
+    }
+
+    #final {
+        height: 320px;
+    }
+
+}
