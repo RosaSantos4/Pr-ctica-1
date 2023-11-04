@@ -634,11 +634,14 @@ footer .row * {
     color: #0D55A2;
 }
 
+#historia_h_3fila #historia_beerfree h5 {
+    color: #00AD93;
+}
+
 #historia_h {
     /* para que la imagen del brazo pueda ir a sangre con la pantalla */
     padding: 0;
     margin: 3.5em 0 3.5em 0;
-    height: 100%;
 }
 
 #historia_text {
@@ -703,7 +706,7 @@ padding-top: 3em;
 #historia_h_brazo {
     width: 190%;
     position: relative;
-    bottom: 14em;
+    bottom: 15em;
 }
 
 /* 3FILA */
@@ -712,7 +715,7 @@ padding-top: 3em;
     justify-content: space-between;
     width: 150%;
     position: relative;
-    bottom: 5em;
+    bottom: 16em;
 }
 
 #historia_h_3fila div {
@@ -721,10 +724,44 @@ padding-top: 3em;
 }
 
 #cereal {
-    padding-left: 4em;
-    align-items: normal;
+    padding-left: 6em;
 }
 
 #cereal div:first-child {
     width: 25em;
+}
+
+#cereal div:last-child {
+    position: relative;
+    bottom: 2em;
+    right: 2em;
+}
+
+#dios {
+    padding-left: 10em;
+}
+
+#dios div:first-child {
+    width: 25em;
+}
+
+#dios div:last-child {
+    position: relative;
+    bottom: 3em;
+    right: 3em;
+}
+
+#historia_beerfree {
+    padding-left: 5em;
+}
+
+#historia_beerfree div:first-child {
+    position: relative;
+    bottom: 5em;
+}
+
+#historia_beerfree div:last-child {
+    width: 19em;
+    position: relative;
+    bottom: 4em;
 }
