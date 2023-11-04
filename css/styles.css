@@ -452,6 +452,14 @@ footer .row * {
     margin-bottom: 2.15em;
 }
 
+#resumen_responsive {
+    display: none;
+}
+
+#manos_deco {
+    display: none;
+}
+
 #datos #fname {
     display: flex;
     flex-direction: column;
@@ -904,6 +912,45 @@ padding-top: 3em;
         margin-top: 4em;
     }
 
+    /* Pantalla de compra  */
+
+    #resumen {
+        display: none;
+    }
+
+    #resumen_responsive {
+        display: flex; 
+        margin-bottom: 0; 
+    }
+
+    #cantidad h3 {
+        color: #FAC100;
+    }
+
+    #cerveza_pequeña {
+        width: 8%;
+        margin-bottom: 0;
+    }
+
+    #total_pago {
+        height: 20%;
+        margin-top: 5em;
+        margin-left: 3em;
+        width: 70%;
+    }
+
+    .iva {
+        font-size: 0.8em;
+    }
+
+    #pagar {
+        font-size: 1em;
+    }
+    
+    #volver {
+        font-size: 1em;
+    }
+
   }
 
 @media only screen and (max-width: 700px) {
@@ -952,6 +999,27 @@ padding-top: 3em;
     font-size: 1em;
     margin-left: 1.5em;
     }
+
+    /* Pantalla de compra */
+
+    #cerveza_pequeña {
+        width: 5%;
+    }
+
+    #total_pago {
+        margin-left: 0;
+        width: 80%;
+        height: 30%;
+    }
+
+    #manos_deco {
+        display: flex;
+        width: 100%;
+    }
+
+    #privacidad {
+        font-size: 0.8em;
+    }
   }
 
 @media only screen and (max-width: 520px) {
@@ -979,6 +1047,33 @@ padding-top: 3em;
     #suscribirse {
         font-size: 1em;
     }
+
+    /* Pantalla de compra  */
+
+    #datos #fname {
+        width: 80%;
+    }
+
+    #privacidad {
+        font-size: 0.8em;
+        width: 80%;
+    }
+
+    #botones_continuar {
+        width: 85%;
+    }
+
+    #total_pago h4 {
+        font-size: 1.5em;
+    }
+
+    .total {
+        font-size: 1em;
+    }
+
+    .iva {
+        font-size: 0.5em;
+    }
   }
 
   @media only screen and (max-width: 450px) {
@@ -991,6 +1086,28 @@ padding-top: 3em;
 
     #final #texto h3 {
         font-size: 1.3em;
+    }
+
+    /* Pantalla de compra  */
+
+    #cortadas h4 {
+        font-size: 1.5em;
+    }
+
+    #cerveza_pequeña {
+        width: 7%;
+    }
+
+    #manos_deco {
+        width: 85%;
+    }
+
+    #cortadas {
+        margin-left: 1.5em;
+    }
+
+    #resumen_responsive {
+        flex-direction: column;
     }
 
   }
