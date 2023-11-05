@@ -441,7 +441,8 @@ footer .row * {
 
 #pegatinas_footer {
     position: absolute;
-    margin-left: 55em;
+    margin-left: 45em;
+    margin-top: 5em;
 }
 
 #carouselExampleAutoplaying {
@@ -787,6 +788,53 @@ padding-top: 3em;
     }
     /* no sé por qué pasa otra vez lo de la imagen del reborde  */
 
+    /* Pantalla de inicio  */
+
+    #logo {
+        width: 10em;
+    }
+
+    #links h2 {
+        font-size: 4em;
+    }
+
+    #links img {
+        width: 170%;
+    }
+
+    #producto {
+        margin-left: 1em;
+    }
+
+    #producto_galeria img {
+        margin-bottom: 1em;
+        width: 79%;
+    }
+
+    #producto_stars p {
+        font-size: 1em;
+    }
+
+    #producto_stars img {
+        width: 50%;
+    }
+
+    #producto_info h3 {
+        font-size: 3em;
+    }
+
+    #producto_info h4 {
+        font-size: 2em;
+    }
+
+    #info_producto p {
+        font-size: 0.8em;
+    }
+
+    #producto_cantidad .btn-group {
+        font-size: 0.8em;
+    }
+
   }
 
   @media only screen and (max-width: 1060px) {
@@ -822,6 +870,13 @@ padding-top: 3em;
     #cortadas h4 {
         font-size: 2em;
     }
+
+    /* Pantalla de inicio  */
+
+    #producto {
+        max-width: 100%;
+    }
+
 }
 
 @media only screen and (max-width: 950px) {
@@ -952,6 +1007,19 @@ padding-top: 3em;
     }
 
   }
+
+  @media only screen and (max-width: 768px) {
+
+    /* Pantalla de inicio  */
+    #producto_galeria {
+        display: none;
+    }
+
+    #carouselExampleAutoplaying {
+        margin-bottom: 2em;
+    }
+  }
+
 
 @media only screen and (max-width: 700px) {
 
@@ -1108,6 +1176,12 @@ padding-top: 3em;
 
     #resumen_responsive {
         flex-direction: column;
+    }
+
+    /* Pantalla de inicio  */
+
+    #r1 {
+        margin-bottom: 1em;
     }
 
   }
