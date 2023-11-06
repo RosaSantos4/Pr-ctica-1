@@ -618,23 +618,23 @@ footer .row * {
 
 
 /* TIPOS HISTORIA HTML */
-#historia_h_1fila #acompanante h5 {
+#historia_h_1fila #acompanante h5 , #historia_v_2fila h5{
     color: #FAC100;
 }
 
-#historia_h_1fila #celiaco h5 {
+#historia_h_1fila #celiaco h5 , #historia_v_4fila h5 {
     color: #EC5F44;
 }
 
-#historia_h_3fila #cereal h5 {
+#historia_h_3fila #cereal h5 , #historia_v_1fila h5 {
     color: #EC5F44;
 }
 
-#historia_h_3fila #dios h5 {
+#historia_h_3fila #dios h5 , #historia_v_3fila h5 {
     color: #0D55A2;
 }
 
-#historia_h_3fila #historia_beerfree h5 {
+#historia_h_3fila #historia_beerfree h5 , #historia_v_5fila h5 {
     color: #00AD93;
 }
 
@@ -764,4 +764,76 @@ padding-top: 3em;
     width: 19em;
     position: relative;
     bottom: 4em;
+}
+
+#historia_v {
+    display: none;
+}
+
+@media only screen and (max-width: 992px) {
+    #historia_h {
+        display: none;
+    }
+
+    #historia_v {
+        display: block;
+        max-width: 100%; 
+    }
+
+    #historia_v div {
+        margin-bottom: 2em;
+    }
+
+    #historia_v div div:last-child {
+        display: flex;
+        justify-content: center;
+    }
+
+    #historia_v div div:first-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 3em;
+    }
+
+/* TAMAÑO TIPOGRAFIAS */
+    #historia_v div h3 {
+        font-size: 6em;
+        width: auto;
+    }
+
+    #historia_v div h5 {
+        font-size: 3rem;
+        width: auto;
+    }
+
+    #historia_v div p {
+        width: auto;
+    }
+
+    #historia_v_titulo {
+        margin-top: 5em;
+        margin-bottom: 5em;
+        flex-direction: row;
+    }
+
+    #historia_v_titulo img {
+        position: relative;  
+        width: 7em; 
+        height: 7em;
+        right: 2em;
+    }
+
+    #historia_v_2fila , #historia_v_4fila {
+        flex-direction: row-reverse;
+    }
+
+    #historia_v_5fila div:first-child {
+        align-items: center;
+    }
+
+    #historia_v_5fila div:first-child h5 {
+        font-size: 5em;
+    }
+
 }
