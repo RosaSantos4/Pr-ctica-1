@@ -55,7 +55,7 @@ nav.menu ul a {
 
 #logo {
     display: grid;
-    width: 15em;
+    width: 12em;
     place-items: center;
     margin: auto;
 }
@@ -78,7 +78,7 @@ nav.menu ul a {
 
 #grafica_cerveza {
     width: 90%;
-    margin-right: 3em;
+    margin-right: 2em;
 }
 
 h3 {
@@ -266,11 +266,6 @@ h6 {
     margin-left: 1em;
 }
 
-/* preguntarle por qué aunque está por debajo sigue manteniendo la altura */
-#formulario-container .comentario {
-    height: 99px;
-}
-
 #publicar {
     font-family: 'Courier Prime', monospace;
     color: white;
@@ -313,7 +308,6 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 100%;
     border-radius: 13px;
     border: 5px solid var(--blue, #0D55A2);
     background-color: white;
@@ -328,7 +322,6 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 90%;
     border-radius: 13px;
     border: 5px solid var(--blue, #0D55A2);
     background-color: white;
@@ -336,6 +329,7 @@ h1 {
     margin-bottom: 0;  
     padding-left: 1em;
     color: #0D55A2;
+    width: 90%;
 }
 
 #suscribirme {
@@ -445,6 +439,10 @@ footer .row * {
     margin-top: 5em;
 }
 
+#contacto_formulario #fname {
+    width: 100%;
+}
+
 #carouselExampleAutoplaying {
     width: 90%;
 }
@@ -454,10 +452,6 @@ footer .row * {
 }
 
 #resumen_responsive {
-    display: none;
-}
-
-#manos_deco {
     display: none;
 }
 
@@ -475,7 +469,7 @@ footer .row * {
     margin: 0;
 }
 
-#datos #personales .row .col-7 {
+#datos #personales .row .col-lg-7 {
     width: 63%;
 }
 
@@ -484,7 +478,7 @@ footer .row * {
     margin-top: 3em;
 }
 
-#datos #envío .row .col-5 {
+#datos #envío .row .col-lg-5 {
     width: 47%;
 }
 
@@ -493,11 +487,11 @@ footer .row * {
 }
 
 #datos #pago .col-7 {
-    width: 55%;
+    width: 50%;
 } 
 
 #datos #pago .col-4 {
-    width: 39%;
+    width: 50%;
 } 
 
 #datos #pago .col-8 {
@@ -786,7 +780,6 @@ padding-top: 3em;
     #botones_continuar {
         margin-bottom: 1em;
     }
-    /* no sé por qué pasa otra vez lo de la imagen del reborde  */
 
     /* Pantalla de inicio  */
 
@@ -837,12 +830,12 @@ padding-top: 3em;
 
   }
 
-  @media only screen and (max-width: 1060px) {
+  @media only screen and (max-width: 1120px) {
+    
+    /* Pantalla de inicio */
 
-    /* Pantalla de compra  */
-
-    .container {
-        margin-left: 3em;
+    #pegatina_1 {
+        margin-right: 5em;
     }
   }
 
@@ -859,10 +852,6 @@ padding-top: 3em;
         width: 220%;
     }
 
-    #manos_cortadas {
-        width: 270%;
-    }
-
     #cortadas #fname {
         font-size: 0.8em;
     }
@@ -874,7 +863,23 @@ padding-top: 3em;
     /* Pantalla de inicio  */
 
     #producto {
-        max-width: 100%;
+        max-width: 90%;
+    }
+
+    #producto_galeria img {
+        width: 65%;
+    }
+
+    #links h2 {
+        font-size: 3em;
+    }
+
+    #pegatina_1, #pegatina {
+        width: 24%;
+    }
+
+    #pegatina {
+        margin-right: 5em;
     }
 
 }
@@ -917,10 +922,6 @@ padding-top: 3em;
     /* Pantalla de compra  */
     #cerveza_pequeña img {
         width: 1300%;
-    }
-
-    #manos_cortadas {
-        display: none;
     }
 
     #cantidad h3 {
@@ -1008,7 +1009,17 @@ padding-top: 3em;
 
   }
 
-  @media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
+
+    /* Pantalla de compra  */
+
+    #datos #personales .row .col-md-7 {
+        width: 100%;
+    }
+
+    #total_pago h4 {
+        font-size: 1.5em;
+    }
 
     /* Pantalla de inicio  */
     #producto_galeria {
@@ -1018,8 +1029,7 @@ padding-top: 3em;
     #carouselExampleAutoplaying {
         margin-bottom: 2em;
     }
-  }
-
+}
 
 @media only screen and (max-width: 700px) {
 
@@ -1043,11 +1053,11 @@ padding-top: 3em;
     }
 
     .banda {
-        margin-top: 35px;
+        margin-top: 50px;
     }
 
     #final {
-        height: 380px;
+        height: 400px;
     }
 
     #contacto_formulario p{
@@ -1080,15 +1090,34 @@ padding-top: 3em;
         height: 30%;
     }
 
-    #manos_deco {
-        display: flex;
-        width: 100%;
-    }
-
     #privacidad {
         font-size: 0.8em;
     }
-  }
+
+    #cortadas {
+        width: 90%;
+    }
+
+    /* Pantalla de inicio  */
+
+    #logo {
+        width: 8em;
+    }
+
+    #links h2 {
+        font-size: 2em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #pegatina_1 {
+        margin-right: 2em;
+    }
+
+    #pegatina {
+        margin-right: 3em;
+    }
+}
 
 @media only screen and (max-width: 520px) {
 
@@ -1109,7 +1138,7 @@ padding-top: 3em;
     }
 
     .banda {
-        margin-top: 50px;
+        display: none;
     }
 
     #suscribirse {
@@ -1131,10 +1160,6 @@ padding-top: 3em;
         width: 85%;
     }
 
-    #total_pago h4 {
-        font-size: 1.5em;
-    }
-
     .total {
         font-size: 1em;
     }
@@ -1142,15 +1167,19 @@ padding-top: 3em;
     .iva {
         font-size: 0.5em;
     }
+
+    #datos #envío .row .col-md-5 {
+        width: 45%;
+    }
+
+    #minimal p {
+        font-size: 0.8em;
+    }
   }
 
   @media only screen and (max-width: 450px) {
 
     /* Pantalla de finalización de compra  */
-
-    .banda {
-        display: none;
-    }
 
     #final #texto h3 {
         font-size: 1.3em;
@@ -1166,10 +1195,6 @@ padding-top: 3em;
         width: 7%;
     }
 
-    #manos_deco {
-        width: 85%;
-    }
-
     #cortadas {
         margin-left: 1.5em;
     }
@@ -1178,28 +1203,15 @@ padding-top: 3em;
         flex-direction: column;
     }
 
+    #total_pago {
+        margin-top: 0;
+    }
+
     /* Pantalla de inicio  */
 
     #r1 {
         margin-bottom: 1em;
     }
 
-  }
-
-@media only screen and (max-width: 400px) {
-
-    /* Pantalla de finalización de compra  */
-
-    #fname {
-        width: 90%;
-    }
-
-    #final #texto h3 {
-        font-size: 1em;
-    }
-
-    #final {
-        height: 320px;
-    }
-
 }
+
