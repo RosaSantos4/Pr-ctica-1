@@ -44,6 +44,11 @@ form {
     text-decoration: none;
 }
 
+/* Menu hamburguesa */
+#menu>ul>li:last-child {
+    display: none;
+}
+
 .fa-solid {
     color: #0D55A2;
 }
