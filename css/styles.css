@@ -12,46 +12,47 @@ form {
     font-family: 'Courier Prime', monospace;
 }
 
-#header {
-    font-family: 'Courier Prime', monospace;
-    width: auto;
-}
+/* MENU */
 
-nav.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-} 
-
-nav.menu ul a {
-    display: flex;
-    justify-content: center;
+#menu {
+    text-align: center;
+    /* sticky menu  */
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
     width: 100%;
-    text-decoration: none;
-    color: black;
+    background-color: white;
 }
 
-.hamburger-menu {
-    display: none; 
-    cursor: pointer;
-    color: #0D55A2;
+#menu ul li {
+    display: inline-block;
+    padding: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* responsive  */
+    transition: .3s;
+}
+
+#menu ul li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier Prime', monospace;
+}
+
+#menu ul li:hover a {
+    color: #FAC100;
+    text-decoration: none;
+}
+
+/* Menu hamburguesa */
+#menu>ul>li:last-child {
+    display: none;
 }
 
 .fa-solid {
     color: #0D55A2;
 }
-
-#menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    top: 0;
-    width: 100%;
-    background-color: white;
-}
-
 
 #grafica {
     background-color: #0D55A2;
@@ -630,119 +631,6 @@ footer .row * {
     transform: rotate(-10deg);
 }
 
-
-/* TIPOS HISTORIA HTML */
-#historia_h_1fila #acompanante h5 {
-    color: #FAC100;
-}
-
-#historia_h_1fila #celiaco h5 {
-    color: #EC5F44;
-}
-
-#historia_h_3fila #cereal h5 {
-    color: #EC5F44;
-}
-
-#historia_h_3fila #dios h5 {
-    color: #0D55A2;
-}
-
-#historia_h {
-    /* para que la imagen del brazo pueda ir a sangre con la pantalla */
-    padding: 0;
-    margin: 3.5em 0 3.5em 0;
-    height: 100%;
-}
-
-#historia_text {
-    flex-direction: column;
-}
-
-#historia_img {
-    padding: 2em;
-    padding-top: 0;
-}
-
-/* 1 FILA  */
-#historia_h_1fila {
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 150%;
-}
-
-#historia_h_1fila div {
-    display: flex;
-    width: min-content;
-}
-
-/* titulo página */
-#nuestrahistoria {
-    padding-left: 4em;
-}
-
-/* img que acompaña titulo */
-#nuestrahistoria img {
-    width: 4em;
-    height: 4em;
-    position: relative;
-    top: 0.25em;
-    right: 0.25em;
-}
-
-#acompanante div:nth-child(3) img {
-    height: 10em;
-    position: relative;
-    top: 4em;
-    margin-right: 5em;
-}
-
-#celiaco{
-padding-top: 3em;
-}
-
-#celiaco div:first-child {
-    width: 20em;
-    align-items: flex-start;
-}
-
-#celiaco div:last-child img {
-    height: 8em;
-    position: relative;
-    right: 6em;
-    bottom: 3em;
-}
-
-/* BRAZO */
-#historia_h_brazo {
-    width: 190%;
-    position: relative;
-    bottom: 14em;
-}
-
-/* 3FILA */
-#historia_h_3fila {
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 150%;
-    position: relative;
-    bottom: 5em;
-}
-
-#historia_h_3fila div {
-    display: flex;
-    width: min-content;
-}
-
-#cereal {
-    padding-left: 4em;
-    align-items: normal;
-}
-
-#cereal div:first-child {
-    width: 25em;
-}
-
 /* MEDIA QUERIES  */
 
 
@@ -1302,4 +1190,3 @@ padding-top: 3em;
     }
 
 }
-

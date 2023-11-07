@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/historia.css">
     <script src="https://kit.fontawesome.com/26e0145f92.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,30 +16,27 @@
 </head>
 <body>
     <header>
-        <!-- Iconos se ven siempre. Las palabras se despliegan cuando se da al menú hamburguesa -->
-        <div class="row" id="menu">
-            <nav class="menu">
-                <ul>
-                    <a href="compra.html">
-                        <div class="col-2"><i class="fa-solid fa-cart-shopping"></i></div>
-                    </a>
-                    <a href="index.html#producto">
-                        <div class="col-2" id="header">Producto</div>
-                    </a>
-                    <a href="historia.html">
-                        <div class="col-2" id="header">Nuestra historia</div>
-                    </a>
-                    <a href="index.html#footer">
-                        <div class="col-2" id="header">Contáctanos</div>
-                    </a>
-                    <a href="">
-                        <div class="col-2"><i class="fa-solid fa-bars"></i></div>
-                    </a>
-                </ul>
-            </nav>
-        </div>
+        <nav id="menu">
+            <ul>
+                <li>
+                    <a href="compra.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+                <li>
+                    <a href="index.html#producto">Producto</a>
+                </li>
+                <li>
+                    <a href="historia.html">Nuestra historia</a>
+                </li>
+                <li>
+                    <a href="index.html#footer">Contáctanos</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
+    <main id="historia_main">
         <!-- Scroll horizontal: historia_h. A partir de ipad, scroll vertical: historia_v-->
         <section class="container" id="historia_h">
             <div class="row flex-row flex-nowrap" id="historia_h_1fila">
@@ -110,12 +108,12 @@
                     </div>
                 </div>
                 <!-- Llega Beer Free  -->
-                <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 col-md-4 col-lg-3" id="historia_beerfree">
                     <div id="historia_img">
                         <img src="media/barril.png" alt="">
                     </div>
                     <div id="historia_text">
-                        <h5>¡llega beer free!</h5>
+                        <h5>¡llega <br> beer free!</h5>
                         <p>
                             La primera cerveza sin gluten con un look rechulón
                         </p>
@@ -123,66 +121,77 @@
                 </div>
             </div>
         </section>
-<!-- Vertical para pantallas pequeñas
+<!-- Vertical para pantallas pequeñas -->
         <section class="container" id="historia_v">
             <div class="row" id="historia_v_titulo">
-                <h3>NUESTRA HISTORIA</h3>
+                <h3>NUESTRA <br> HISTORIA</h3>
                 <img src="media/deco_amarillo.png" alt="">
             </div>
+
             <div class="row" id="historia_v_1fila">
-                <h5>mezclando agua y cereales</h5>
-                <p>
-                    La primera cerveza apareció en Sumeria donde mezclaron agua 
-                    con cereales y su fermentación combirtió esa mezcla en una bebida alcohólica.
-                </p>
+                <div class="col-7">
+                    <h5>mezclando agua <br> y cereales</h5>
+                    <p>
+                        La primera cerveza apareció en Sumeria donde mezclaron agua 
+                        con cereales y su fermentación combirtió esa mezcla en una bebida alcohólica.
+                    </p>
+                </div>
+                <div class="col-5">
+                    <img src="media/trigo.png" alt="">
+                </div>
             </div>
-            <div class="row" id="historia_v_1fila_img">
-                <img src="media/brazo_1.png" alt="">
-                <img src="media/trigo.png" alt="">
-            </div>
+
             <div class="row" id="historia_v_2fila">
-                <h5>LA MEJOR ACOMPAÑANTE</h5>
-                <p>
-                    A lo largo de la historia, la cerveza ha estado presente desde mesas 
-                    de madera hasta banquetes reales.
-                </p>
+                <div class="col-7">
+                    <h5>LA MEJOR <br> ACOMPAÑANTE</h5>
+                    <p>
+                        A lo largo de la historia, la cerveza ha estado presente desde mesas 
+                        de madera hasta banquetes reales.
+                    </p>
+                </div>
+                <div class="col-5">
+                    <img src="media/cerveza_completa.png" alt="">
+                </div>
             </div>
-            <div class="row" id="historia_v_2fila_img">
-                <img src="media/cerveza_completa.png" alt="">
-                <img src="media/brazo_2.png" alt="">
-            </div>
+
             <div class="row" id="historia_v_3fila">
-                <h5>la bebida de dioses</h5>
-                <p>
-                    La cerveza saltó el charco y ahora podemos encontrarla 
-                    en cada punta del planeta.
-                </p>
+                <div class="col-7">
+                    <h5>la bebida de <br> los dioses</h5>
+                    <p>
+                        La cerveza saltó el charco y ahora podemos encontrarla 
+                        en cada punta del planeta.
+                    </p>
+                </div>
+                <div class="col-5">
+                    <img src="media/mundo.png" alt="">
+                </div>
             </div>
-            <div class="row" id="historia_v_3fila_img">
-                <img src="media/brazo_3.png" alt="">
-                <img src="media/mundo.png" alt="">
-            </div>
+
             <div class="row" id="historia_v_4fila">
-                <h5>¿celiaco?</h5>
-                <p>
-                    Pero la cerveza no la podía tomar todo el mundo y había que buscar una solución. 
-                    Por eso...  
-                </p>
+                <div class="col-7">
+                    <h5>¿celiaco?</h5>
+                    <p>
+                        Pero la cerveza no la podía tomar todo el mundo y había que buscar una solución. 
+                        Por eso...  
+                    </p>
+                </div>
+                <div class="col-5">
+                    <img src="media/celiaco.png" alt="">
+                </div>
             </div>
-            <div class="row" id="historia_v_4fila_img">
-                <img src="media/celiaco.png" alt="">
-                <img src="media/brazo_4.png" alt="">
-            </div>
+
             <div class="row" id="historia_v_5fila">
-                <h5>¡llega beer free!</h5>
-                <p>
-                    La primera cerveza sin gluten con un look rechulón
-                </p>
+                <div class="col-12">
+                    <h5>¡llega beer free!</h5>
+                    <p>
+                        La primera cerveza sin gluten con un look rechulón
+                    </p>
+                </div>
+                <div class="col-12">
+                    <img src="media/barril.png" alt="">
+                </div>
             </div>
-            <div class="row" id="historia_v_5fila_img">
-                <img src="media/barril.png" alt="">
-            </div>
-        </section> -->
+        </section>
     </main>
     <footer>
         <script src="js/bootstrap.bundle.min.js"></script>
