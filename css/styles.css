@@ -1,5 +1,6 @@
 *{
     font-family: 'Bungee', sans-serif;
+    scroll-behavior: smooth;
 }
 
 p{
@@ -30,14 +31,11 @@ nav.menu ul a {
     color: black;
 }
 
-/* #iconos {
-    display: none;
+.hamburger-menu {
+    display: none; 
+    cursor: pointer;
+    color: #0D55A2;
 }
-
-nav.menu:hover #iconos {
-    display: flex;
-} */
-
 
 .fa-solid {
     color: #0D55A2;
@@ -46,14 +44,14 @@ nav.menu:hover #iconos {
 #menu {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     padding-top: 1em;
     padding-bottom: 1em;
-    position: fixed;
     top: 0;
     width: 100%;
     background-color: white;
 }
+
 
 #grafica {
     background-color: #0D55A2;
@@ -64,7 +62,7 @@ nav.menu:hover #iconos {
 
 #logo {
     display: grid;
-    width: 15em;
+    width: 12em;
     place-items: center;
     margin: auto;
 }
@@ -87,7 +85,7 @@ nav.menu:hover #iconos {
 
 #grafica_cerveza {
     width: 90%;
-    margin-right: 3em;
+    margin-right: 2em;
 }
 
 h3 {
@@ -275,11 +273,6 @@ h6 {
     margin-left: 1em;
 }
 
-/* preguntarle por qué aunque está por debajo sigue manteniendo la altura */
-#formulario-container .comentario {
-    height: 99px;
-}
-
 #publicar {
     font-family: 'Courier Prime', monospace;
     color: white;
@@ -322,7 +315,6 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 55%;
     border-radius: 13px;
     border: 5px solid var(--blue, #0D55A2);
     background-color: white;
@@ -337,7 +329,6 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    width: 90%;
     border-radius: 13px;
     border: 5px solid var(--blue, #0D55A2);
     background-color: white;
@@ -345,6 +336,7 @@ h1 {
     margin-bottom: 0;  
     padding-left: 1em;
     color: #0D55A2;
+    width: 90%;
 }
 
 #suscribirme {
@@ -382,7 +374,7 @@ h1 {
 
 .banda {
     width: 100%;
-    margin-top: 300px;
+    position: relative;
 }
 
 #final {
@@ -407,7 +399,7 @@ h1 {
 
 .deco {
     position: absolute;
-    margin-top: 3em;
+    margin-top: 8em;
 }
 
 #final #texto {
@@ -422,11 +414,16 @@ h1 {
     text-align: center;
 }
 
+#final #texto h3 {
+    margin-top: 5em;
+}
+
 #final #texto p {
     color: white;
     text-align: center;
     margin-left: 20em;
     margin-right: 20em;
+    margin-bottom: 11em;
 }
 
 footer .row * {
@@ -445,7 +442,12 @@ footer .row * {
 
 #pegatinas_footer {
     position: absolute;
-    margin-left: 55em;
+    margin-left: 45em;
+    margin-top: 5em;
+}
+
+#contacto_formulario #fname {
+    width: 100%;
 }
 
 #carouselExampleAutoplaying {
@@ -454,6 +456,10 @@ footer .row * {
 
 #producto_galeria img {
     margin-bottom: 2.15em;
+}
+
+#resumen_responsive {
+    display: none;
 }
 
 #datos #fname {
@@ -470,7 +476,7 @@ footer .row * {
     margin: 0;
 }
 
-#datos #personales .row .col-7 {
+#datos #personales .row .col-lg-7 {
     width: 63%;
 }
 
@@ -479,7 +485,7 @@ footer .row * {
     margin-top: 3em;
 }
 
-#datos #envío .row .col-5 {
+#datos #envío .row .col-lg-5 {
     width: 47%;
 }
 
@@ -488,11 +494,11 @@ footer .row * {
 }
 
 #datos #pago .col-7 {
-    width: 55%;
+    width: 50%;
 } 
 
 #datos #pago .col-4 {
-    width: 39%;
+    width: 50%;
 } 
 
 #datos #pago .col-8 {
@@ -519,14 +525,23 @@ footer .row * {
 
 #botones_continuar {
     margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 #resumen {
-    margin-top: 3em;
+    margin: 0;
+    padding: 0;
+    padding-left: 2em;
+    background-color: #00AD93;
+}
+
+#resumen h4 {
+    color: white;
+    margin-top: 1em;
 }
 
 #resumen h3 {
-    color: #FAC100;
+    color: white;
 }
 
 #cantidad {
@@ -544,14 +559,13 @@ footer .row * {
 
 #cantidad p {
     font-weight: bold;
+    color: white;
 }
 
 #total_pago {
-    background-color: #0D55A2;
-    width: 90%;
-    border-radius: 13px;
     display: flex;
-    align-items: center;
+    align-items: end;
+
 }
 
 #total_pago p, #total_pago h4 {
@@ -728,3 +742,564 @@ padding-top: 3em;
 #cereal div:first-child {
     width: 25em;
 }
+
+/* MEDIA QUERIES  */
+
+
+@media only screen and (max-width: 1200px) {
+    /* Pantalla de finalización de compra  */
+
+    #pegatinas_footer {
+        position: absolute;
+        margin-left: 40em;
+        margin-top: 8em;
+    }
+
+    #pegatinas_footer img {
+        width: 80%;
+    }
+
+    #final {
+        height: 700px;
+    }
+
+    .banda {
+        width: 100%;
+        margin-top: 200px;
+    }
+
+    #final #texto p {
+        margin-bottom: 0.1em;
+        font-size: 0.8em;
+    }
+
+    #final #texto h3 {
+        margin-top: 6em;
+        font-size: 3em;
+    }
+
+    .deco {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 6em ;
+    }
+
+    /* Pantalla de compra  */
+
+    .container {
+        margin-left: 6em;
+    }
+
+    #botones_continuar {
+        margin-bottom: 1em;
+    }
+
+    /* Pantalla de inicio  */
+
+    #logo {
+        width: 10em;
+    }
+
+    #links h2 {
+        font-size: 4em;
+    }
+
+    #links img {
+        width: 170%;
+    }
+
+    #producto {
+        margin-left: 1em;
+    }
+
+    #producto_galeria img {
+        margin-bottom: 1em;
+        width: 79%;
+    }
+
+    #producto_stars p {
+        font-size: 1em;
+    }
+
+    #producto_stars img {
+        width: 50%;
+    }
+
+    #producto_info h3 {
+        font-size: 3em;
+    }
+
+    #producto_info h4 {
+        font-size: 2em;
+    }
+
+    #info_producto p {
+        font-size: 0.8em;
+    }
+
+    #producto_cantidad .btn-group {
+        font-size: 0.8em;
+    }
+
+  }
+
+  @media only screen and (max-width: 1120px) {
+    
+    /* Pantalla de inicio */
+
+    #pegatina_1 {
+        margin-right: 5em;
+    }
+  }
+
+@media only screen and (max-width: 992px) {
+
+    /* Pantalla de compra  */
+
+    .container {
+        margin-left: 3em;
+        margin-top: 3em;
+    }
+
+    #total_pago {
+        width: 220%;
+    }
+
+    #cortadas #fname {
+        font-size: 0.8em;
+    }
+
+    #cortadas h4 {
+        font-size: 2em;
+    }
+
+    /* Pantalla de inicio  */
+
+    #producto {
+        max-width: 90%;
+    }
+
+    #producto_galeria img {
+        width: 65%;
+    }
+
+    #links h2 {
+        font-size: 3em;
+    }
+
+    #pegatina_1, #pegatina {
+        width: 24%;
+    }
+
+    #pegatina {
+        margin-right: 5em;
+    }
+
+}
+
+@media only screen and (max-width: 950px) {
+
+    /* Pantalla de finalización de compra  */
+
+    #final #texto p {
+        margin-bottom: 2em;
+    }
+
+    #final #texto h3 {
+        font-size: 2.5em;
+    }
+
+    h1 {
+        font-size: 4em ;
+        margin-left: 1em;
+    }
+
+    #pegatinas_footer {
+        position: absolute;
+        margin-left: 35em;
+        margin-top: 6em;
+    }
+
+    #pegatinas_footer img {
+        width: 100%;
+    }
+
+    #final {
+        height: 600px;
+    }
+
+    .banda {
+        margin-top: 115px;
+    }
+
+    /* Pantalla de compra  */
+    #cerveza_pequeña img {
+        width: 1300%;
+    }
+
+    #cantidad h3 {
+        font-size: 3em;
+    }
+
+    #total_pago {
+        width: 200%;
+    }
+
+    .total {
+        font-size: 1.5em;
+        margin-top: 0.5em;
+    }
+
+  }
+
+@media only screen and (max-width: 820px) {
+
+    /* Pantalla de finalización de compra  */
+
+    #final #texto p {
+        margin-right: 6em;
+        margin-left: 6em;
+    }
+
+    #pegatinas_footer {
+        display: none;
+    }
+
+    .banda {
+        margin-top: 120px;
+    }
+
+    #final {
+        height: 500px;
+    }
+
+    .deco {
+        display: none;
+    }
+
+    #final #texto h3 {
+        margin-top: 4em;
+    }
+
+    /* Pantalla de compra  */
+
+    #resumen {
+        display: none;
+    }
+
+    #resumen_responsive {
+        display: flex; 
+        margin-bottom: 0; 
+    }
+
+    #cantidad h3 {
+        color: #FAC100;
+    }
+
+    #cerveza_pequeña {
+        width: 8%;
+        margin-bottom: 0;
+    }
+
+    #total_pago {
+        height: 20%;
+        margin-top: 5em;
+        margin-left: 3em;
+        width: 70%;
+    }
+
+    .iva {
+        font-size: 0.8em;
+    }
+
+    #pagar {
+        font-size: 1em;
+    }
+    
+    #volver {
+        font-size: 1em;
+    }
+
+  }
+
+@media only screen and (max-width: 768px) {
+
+    /* Pantalla de compra  */
+
+    #datos #personales .row .col-md-7 {
+        width: 100%;
+    }
+
+    #total_pago h4 {
+        font-size: 1.5em;
+    }
+
+    #sin_margen {
+        margin-left: 5%;
+    }
+
+    /* Pantalla de inicio  */
+    #producto_galeria {
+        display: none;
+    }
+
+    #carouselExampleAutoplaying {
+        margin-bottom: 2em;
+    }
+
+    #producto {
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    /* Pantalla de finalización de compra  */
+
+    h1 {
+        font-size: 2.3em ;
+    }
+
+    #final #texto h3 {
+        font-size: 1.8em;
+        margin-top: 5em;
+    }
+
+    #contacto_titulo {
+        flex-direction: column;
+    }
+
+    #suscribirse {
+        font-size: 1em;
+    }
+
+    .banda {
+        margin-top: 50px;
+    }
+
+    #final {
+        height: 400px;
+    }
+
+    #contacto_formulario p{
+        font-size: 0.7em;
+    }
+
+    .news {
+        padding-left: 3em;
+    }
+
+    #fname {
+        margin-left: 2em;
+        font-size: 0.8em;
+    }
+
+    #suscribirme {
+    font-size: 1em;
+    margin-left: 1.5em;
+    }
+
+    /* Pantalla de compra */
+
+    #cerveza_pequeña {
+        width: 5%;
+    }
+
+    #total_pago {
+        margin-left: 0;
+        width: 80%;
+        height: 30%;
+    }
+
+    #privacidad {
+        font-size: 0.8em;
+    }
+
+    #cortadas {
+        width: 90%;
+    }
+
+    /* Pantalla de inicio  */
+
+    #logo {
+        width: 8em;
+    }
+
+    #links h2 {
+        font-size: 2em;
+        margin-top: 0.5em;
+        margin-bottom: 0.5em;
+    }
+
+    #pegatina_1 {
+        margin-right: 2em;
+    }
+
+    #pegatina {
+        margin-right: 3em;
+    }
+}
+
+@media only screen and (max-width: 520px) {
+
+    /* Pantalla de finalización de compra  */
+
+    #final #texto p {
+        margin-right: 3em;
+        margin-left: 3em;
+    }
+
+    h1 {
+        font-size: 2em ;
+    }
+
+    #final #texto h3 {
+        font-size: 1.5em;
+        margin-top: 6em;
+    }
+
+    .banda {
+        display: none;
+    }
+
+    #suscribirse {
+        font-size: 1em;
+    }
+
+    /* Pantalla de compra  */
+
+    #datos #fname {
+        width: 80%;
+    }
+
+    #privacidad {
+        font-size: 0.8em;
+        width: 80%;
+    }
+
+    #botones_continuar {
+        width: 85%;
+    }
+
+    .total {
+        font-size: 1em;
+    }
+
+    .iva {
+        font-size: 0.5em;
+    }
+
+    #datos #envío .row .col-md-5 {
+        width: 45%;
+    }
+
+    #minimal p {
+        font-size: 0.8em;
+    }
+
+    /* Pantalla de inicio  */
+
+    #grafica_imagenes {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #links h2 {
+        font-size: 3.2em;
+        margin-top: 0;
+    }
+
+    #links {
+        width: 100%;
+    }
+
+    #pegatina_1 {
+        margin-right: 5em;
+        width: 30%;
+    }
+
+    #pegatina {
+        width: 30%;
+        margin-right: 5em;
+    }
+
+    #grafica_cerveza {
+        width: 150%;
+        margin-right: 0;
+    }
+
+    #grafica {
+        overflow: hidden;
+    }
+
+    #datos #envío .row .col-lg-5 {
+        width: 100%;
+    }
+
+  }
+
+  @media only screen and (max-width: 450px) {
+
+    /* Pantalla de finalización de compra  */
+
+    #final #texto h3 {
+        font-size: 1.3em;
+    }
+
+    /* Pantalla de compra  */
+
+    #cortadas h4 {
+        font-size: 1.5em;
+    }
+
+    #cerveza_pequeña {
+        width: 7%;
+    }
+
+    #cortadas {
+        margin-left: 1.5em;
+    }
+
+    #resumen_responsive {
+        flex-direction: column;
+    }
+
+    #total_pago {
+        margin-top: 0;
+    }
+
+    /* Pantalla de inicio  */
+
+    #r1 {
+        margin-bottom: 1em;
+    }
+
+    #links h2 {
+        font-size: 2.5em;
+    }
+
+    #pegatina_1 {
+        width: 25%;
+    }
+
+    #pegatina {
+        width: 25%;
+    }
+
+    #producto_titulo h3 {
+        font-size: 2.5em;
+    }
+
+    #producto_titulo h4 {
+        font-size: 1.5em;
+    }
+
+    h6 {
+        font-size: 1.25em;
+    }
+
+}
+
