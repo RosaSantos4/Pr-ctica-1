@@ -846,6 +846,10 @@ padding-top: 3em;
         max-width: 720px;
     }
 
+    #historia_v div h3 {
+        font-size: 5em;
+    }
+
     #historia_v div div:first-child{
         padding-left: 0;
     }
@@ -867,7 +871,7 @@ padding-top: 3em;
     }
 
     #historia_v_2fila div:last-child img {
-        height: 8em;
+        width: 80%;
     }
 
     #historia_v_3fila div:last-child img {
@@ -883,6 +887,34 @@ padding-top: 3em;
     }
 
     #historia_v_5fila div:first-child h5 {
+        font-size: 2.5em;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #historia_v {
+        max-width: 540px;
+    }
+
+    #historia_v p {
+        font-size: 0.8em;
+    }
+    #historia_v div h3 {
         font-size: 3em;
+    }
+
+    #historia_v div {
+        margin-bottom: 1em;
+    }
+
+    #historia_v div h5 {
+        font-size: 1.5em;
+    }
+
+    #historia_v_titulo img {
+        position: relative;  
+        width: 4em; 
+        height: 4em;
+        right: 1em;
     }
 }
