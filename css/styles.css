@@ -11,48 +11,41 @@ form {
     font-family: 'Courier Prime', monospace;
 }
 
-#header {
-    font-family: 'Courier Prime', monospace;
-    width: auto;
-}
+/* MENU */
 
-nav.menu ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-} 
-
-nav.menu ul a {
-    display: flex;
-    justify-content: center;
+#menu {
+    text-align: center;
+    /* sticky menu  */
+    z-index: 1;
+    position: sticky;
+    top: 0;
+    max-width: 100%;
     width: 100%;
-    text-decoration: none;
+    background-color: white;
+}
+
+#menu ul li {
+    display: inline-block;
+    padding: 5em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    /* responsive  */
+    transition: .3s;
+}
+
+#menu ul li a {
     color: black;
+    text-decoration: none;
+    font-family: 'Courier Prime', monospace;
 }
 
-/* #iconos {
-    display: none;
+#menu ul li:hover a {
+    color: #FAC100;
+    text-decoration: none;
 }
-
-nav.menu:hover #iconos {
-    display: flex;
-} */
-
 
 .fa-solid {
     color: #0D55A2;
-}
-
-#menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 1em;
-    padding-bottom: 1em;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: white;
 }
 
 #grafica {
@@ -614,307 +607,4 @@ footer .row * {
 
 #grafica_cerveza:hover {
     transform: rotate(-10deg);
-}
-
-
-/* TIPOS HISTORIA HTML */
-#historia_h_1fila #acompanante h5 , #historia_v_2fila h5{
-    color: #FAC100;
-}
-
-#historia_h_1fila #celiaco h5 , #historia_v_4fila h5 {
-    color: #EC5F44;
-}
-
-#historia_h_3fila #cereal h5 , #historia_v_1fila h5 {
-    color: #EC5F44;
-}
-
-#historia_h_3fila #dios h5 , #historia_v_3fila h5 {
-    color: #0D55A2;
-}
-
-#historia_h_3fila #historia_beerfree h5 , #historia_v_5fila h5 {
-    color: #00AD93;
-}
-
-#historia_h {
-    /* para que la imagen del brazo pueda ir a sangre con la pantalla */
-    padding: 0;
-    margin: 3.5em 0 3.5em 0;
-}
-
-#historia_text {
-    flex-direction: column;
-}
-
-#historia_img {
-    padding: 2em;
-    padding-top: 0;
-}
-
-/* 1 FILA  */
-#historia_h_1fila {
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 150%;
-}
-
-#historia_h_1fila div {
-    display: flex;
-    width: min-content;
-}
-
-/* titulo página */
-#nuestrahistoria {
-    padding-left: 4em;
-}
-
-/* img que acompaña titulo */
-#nuestrahistoria img {
-    width: 4em;
-    height: 4em;
-    position: relative;
-    top: 0.25em;
-    right: 0.25em;
-}
-
-#acompanante div:nth-child(3) img {
-    height: 10em;
-    position: relative;
-    top: 4em;
-    margin-right: 5em;
-}
-
-#celiaco{
-padding-top: 3em;
-}
-
-#celiaco div:first-child {
-    width: 20em;
-    align-items: flex-start;
-}
-
-#celiaco div:last-child img {
-    height: 8em;
-    position: relative;
-    right: 6em;
-    bottom: 3em;
-}
-
-/* BRAZO */
-#historia_h_brazo {
-    width: 190%;
-    position: relative;
-    bottom: 15em;
-}
-
-/* 3FILA */
-#historia_h_3fila {
-    align-items: flex-start;
-    justify-content: space-between;
-    width: 150%;
-    position: relative;
-    bottom: 16em;
-}
-
-#historia_h_3fila div {
-    display: flex;
-    width: min-content;
-}
-
-#cereal {
-    padding-left: 6em;
-}
-
-#cereal div:first-child {
-    width: 25em;
-}
-
-#cereal div:last-child {
-    position: relative;
-    bottom: 2em;
-    right: 2em;
-}
-
-#dios {
-    padding-left: 10em;
-}
-
-#dios div:first-child {
-    width: 25em;
-}
-
-#dios div:last-child {
-    position: relative;
-    bottom: 3em;
-    right: 3em;
-}
-
-#historia_beerfree {
-    padding-left: 5em;
-}
-
-#historia_beerfree div:first-child {
-    position: relative;
-    bottom: 5em;
-}
-
-#historia_beerfree div:last-child {
-    width: 19em;
-    position: relative;
-    bottom: 4em;
-}
-
-#historia_v {
-    display: none;
-}
-
-@media only screen and (max-width: 992px) {
-    #historia_h {
-        display: none;
-    }
-
-    #historia_v {
-        display: block;
-        max-width: 100%; 
-    }
-
-    #historia_v div {
-        margin-bottom: 2em;
-    }
-
-    #historia_v div div:last-child {
-        display: flex;
-        justify-content: center;
-    }
-
-    #historia_v div div:first-child {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding-left: 3em;
-    }
-
-/* TAMAÑO TIPOGRAFIAS */
-    #historia_v div h3 {
-        font-size: 6em;
-        width: auto;
-    }
-
-    #historia_v div h5 {
-        font-size: 3rem;
-        width: auto;
-    }
-
-    #historia_v div p {
-        width: auto;
-    }
-
-    #historia_v_titulo {
-        margin-top: 5em;
-        margin-bottom: 5em;
-        flex-direction: row;
-    }
-
-    #historia_v_titulo img {
-        position: relative;  
-        width: 7em; 
-        height: 7em;
-        right: 2em;
-    }
-
-    #historia_v_2fila , #historia_v_4fila {
-        flex-direction: row-reverse;
-    }
-
-    #historia_v_5fila div:first-child {
-        align-items: center;
-    }
-
-    #historia_v_5fila div:first-child h5 {
-        font-size: 5em;
-    }
-
-    #historia_v_5fila div:last-child img {
-        width: 50%;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    #historia_v {
-        max-width: 720px;
-    }
-
-    #historia_v div h3 {
-        font-size: 5em;
-    }
-
-    #historia_v div div:first-child{
-        padding-left: 0;
-    }
-
-    #historia_v div {
-        margin-bottom: 1.5em;
-    }
-
-    #historia_v div h5 {
-        font-size: 2.5em;
-    }
-
-    #historia_v div div:last-child {
-        align-items: center;
-    }
-
-    #historia_v_1fila div:last-child img {
-        width: 70%;
-    }
-
-    #historia_v_2fila div:last-child img {
-        width: 80%;
-    }
-
-    #historia_v_3fila div:last-child img {
-        width: 50%;
-    }
-
-    #historia_v_4fila div:last-child img {
-        width: 50%;
-    }
-
-    #historia_v_5fila div:last-child img {
-        width: 60%;
-    }
-
-    #historia_v_5fila div:first-child h5 {
-        font-size: 2.5em;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    #historia_v {
-        max-width: 540px;
-    }
-
-    #historia_v p {
-        font-size: 0.8em;
-    }
-    #historia_v div h3 {
-        font-size: 3em;
-    }
-
-    #historia_v div {
-        margin-bottom: 1em;
-    }
-
-    #historia_v div h5 {
-        font-size: 1.5em;
-    }
-
-    #historia_v_titulo img {
-        position: relative;  
-        width: 4em; 
-        height: 4em;
-        right: 1em;
-    }
 }
