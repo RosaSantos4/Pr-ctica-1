@@ -525,6 +525,7 @@ footer .row * {
 
 #botones_continuar {
     margin-top: 3em;
+    margin-bottom: 3em;
 }
 
 #resumen {
@@ -1028,6 +1029,10 @@ padding-top: 3em;
         font-size: 1.5em;
     }
 
+    #sin_margen {
+        margin-left: 5%;
+    }
+
     /* Pantalla de inicio  */
     #producto_galeria {
         display: none;
@@ -1035,6 +1040,10 @@ padding-top: 3em;
 
     #carouselExampleAutoplaying {
         margin-bottom: 2em;
+    }
+
+    #producto {
+        margin-left: 10%;
     }
 }
 
@@ -1219,6 +1228,10 @@ padding-top: 3em;
         overflow: hidden;
     }
 
+    #datos #envío .row .col-lg-5 {
+        width: 100%;
+    }
+
   }
 
   @media only screen and (max-width: 450px) {
@@ -1267,6 +1280,18 @@ padding-top: 3em;
 
     #pegatina {
         width: 25%;
+    }
+
+    #producto_titulo h3 {
+        font-size: 2.5em;
+    }
+
+    #producto_titulo h4 {
+        font-size: 1.5em;
+    }
+
+    h6 {
+        font-size: 1.25em;
     }
 
 }
