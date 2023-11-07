@@ -38,7 +38,31 @@
     <main id="sin_margen">
         <section class="container" id="cortadas">
             <div class="row">
-                <div class="col-8" id="datos">
+                <div class="col-10" id="resumen_responsive">
+                    <div class="row">
+                        <h4>Resumen</h4>
+                        <div class="col-1" id="cantidad">
+                            <h3>6</h3>
+                            <img src="media/botellita_vector.png" alt="vector botella">
+                            <p>x2</p>
+                        </div>
+                        <div class="col-1" id="cerveza_pequeña">
+                            <img src="media/cerveza_pequeña.png" alt="cerveza pequeña">
+                        </div>
+                    </div>
+                        
+                    <div class="row" id="total_pago">
+                        <div class="col-7">
+                            <p class="total">TOTAL</p>
+                            <p class="iva">Con I.V.A</p>
+                        </div>
+                       <div class="col-2">
+                        <h4>20€</h4>
+                       </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-8 col-md-10 col-sm-12" id="datos">
                     <div class="row" id="personales">
                         <h4>Datos personales</h4>
                         <div class="row">
@@ -52,12 +76,12 @@
                             </form>
                         </div>
                         <div class="row">
-                            <div class="col-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Prefijo" required><br>
                                 </form>
                             </div>
-                            <div class="col-7">
+                            <div class="col-lg-7 col-md-7 col-sm-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Teléfono móvil" required><br>
                                 </form>
@@ -83,24 +107,24 @@
                             </form>
                         </div>
                         <div class="row">
-                            <div class="col-5">
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Código postal" required><br>
                                 </form>
                             </div>
-                            <div class="col-5">
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Ciudad" required><br>
                                 </form>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-5">
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Provincia" required><br>
                                 </form>
                             </div>
-                            <div class="col-5">
+                            <div class="col-lg-5 col-md-5 col-sm-12 col-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="País" required><br>
                                 </form>
@@ -126,19 +150,19 @@
                             </form>
                         </div>
                         <div class="row">
-                            <div class="col-7">
+                            <div class="col-lg-7 col-md-7 col-sm-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Fecha de vencimiento (MM/AA)" required><br>
                                 </form>
                             </div>
-                            <div class="col-4">
+                            <div class="col-lg-4 col-md-4 col-sm-12">
                                 <form>
                                     <input type="text" id="fname" name="fname" value="Código de seguridad" required><br>
                                 </form>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-8">
+                            <div class="col-lg-8 col-md-8 col-sm-10 col-8" id="privacidad">
                                 <p>He podido leer y entiendo la información sobre el uso de mis datos personales explicada en la <a href="">Política de Privacidad</a></p>
                             </div>
                         </div>
@@ -147,45 +171,35 @@
                         <div class="col-5">
                             <button type="button" class="btn btn-secondary" id="volver">VOLVER</button>
                         </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-4">
-                            <button type="button" class="btn btn-secondary">Volver</button>
-                        </div>
-                        <div class="col-4">
+                        <div class="col-5">
                             <a href="final.html">
-                                <button type="button" class="btn btn-primary">Pagar</button>
+                                <button type="button" class="btn btn-primary" id="pagar">PAGAR</button>
                             </a>
                         </div>
                     </div>
                 </div>
 
-            <div class="col-4" id="resumen">
+            <div class="col-lg-4 col-md-2 col-sm-4" id="resumen">
                 <div class="row">
                     <h4>Resumen</h4>
-                    <div class="col-1" id="cantidad">
+                    <div id="cantidad">
                         <h3>6</h3>
                         <img src="media/botellita_vector.png" alt="vector botella">
                         <p>x2</p>
                     </div>
-                    <div class="col-2">
-                        <img src="media/cerveza_pequeña.png" alt="cerveza pequeña">
+                    <div id="cerveza_pequeña">
+                        <img src="media/cerveza_pequeña_recortada.png" alt="cerveza pequeña">
                     </div>
                 </div>
                     
                 <div class="row" id="total_pago">
-                    <div class="col-4">
+                    <div class="col-6">
                         <p class="total">TOTAL</p>
                         <p class="iva">Con I.V.A</p>
                     </div>
                    <div class="col-2">
                     <h4>20€</h4>
                    </div>
-                </div>
-
-                <div class="row">
-                    <img src="media/manos_cortadas.png" alt="manos cortadas" >
                 </div>
             </div>
         </div>
