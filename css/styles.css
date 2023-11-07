@@ -506,6 +506,10 @@ footer .row * {
     font-size: 0.8em;
 }
 
+#cerveza_pequeña img{
+    margin-left: 1.5em;
+}
+
 #pagar {
     font-family: 'Courier Prime', monospace;
     color: white;
