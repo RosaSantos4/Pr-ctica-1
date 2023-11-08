@@ -570,7 +570,6 @@ footer .row * {
 #total_pago {
     display: flex;
     align-items: end;
-
 }
 
 #total_pago p, #total_pago h4 {
@@ -688,6 +687,8 @@ footer .row * {
         margin-bottom: 1em;
     }
 
+    /* No sé por qué hay un margen SOLUCIONARLO  */
+
     /* Pantalla de inicio  */
 
     #logo {
@@ -744,6 +745,19 @@ footer .row * {
     #pegatina_1 {
         margin-right: 5em;
     }
+
+    /* Pantalla de compra  */
+    #cerveza_pequeña img {
+        width: 50%;
+    }
+
+    .total {
+        font-size: 1.5em;
+    }
+
+    #total_pago h4 {
+        font-size: 2em;
+    }
   }
 
 @media only screen and (max-width: 992px) {
@@ -755,16 +769,24 @@ footer .row * {
         margin-top: 3em;
     }
 
-    #total_pago {
-        width: 220%;
-    }
-
     #cortadas #fname {
         font-size: 0.8em;
     }
 
     #cortadas h4 {
         font-size: 2em;
+    }
+
+    #resumen h4 {
+        margin-top: 1.5em;
+    }
+
+    .total {
+        margin-left: 0.25em;
+    }
+
+    .iva {
+        margin-left: 0.25em;
     }
 
     /* Pantalla de inicio  */
@@ -827,9 +849,7 @@ footer .row * {
     }
 
     /* Pantalla de compra  */
-    #cerveza_pequeña img {
-        width: 1300%;
-    }
+
 
     #cantidad h3 {
         font-size: 3em;
@@ -884,22 +904,34 @@ footer .row * {
     #resumen_responsive {
         display: flex; 
         margin-bottom: 0; 
+        background-color: #00AD93;
+        padding: 1em;
+        border-radius: 13px;
+        align-items: center;
     }
 
     #cantidad h3 {
-        color: #FAC100;
+        color: white;
     }
 
     #cerveza_pequeña {
-        width: 8%;
+        width: 70%;
         margin-bottom: 0;
     }
+
+    #cerveza_pequeña img {
+        width: 100%;
+    }    
 
     #total_pago {
         height: 20%;
         margin-top: 5em;
         margin-left: 3em;
-        width: 70%;
+        width: 100%;
+    }
+
+    #resumen_responsive h4{
+        color: white;
     }
 
     .iva {
@@ -931,6 +963,12 @@ footer .row * {
     #sin_margen {
         margin-left: 5%;
     }
+
+    .iva {
+        font-size: 0.5em;
+    }
+
+
 
     /* Pantalla de inicio  */
     #producto_galeria {
@@ -995,14 +1033,10 @@ footer .row * {
 
     /* Pantalla de compra */
 
-    #cerveza_pequeña {
-        width: 5%;
-    }
+   
 
-    #total_pago {
-        margin-left: 0;
-        width: 80%;
-        height: 30%;
+    #cerveza_pequeña {
+        width: 70%;
     }
 
     #privacidad {
@@ -1011,6 +1045,14 @@ footer .row * {
 
     #cortadas {
         width: 90%;
+    }
+
+    .iva {
+        margin-left: 1em;
+    }
+
+    #total_pago {
+        align-content: flex-end;
     }
 
     /* Pantalla de inicio  */
