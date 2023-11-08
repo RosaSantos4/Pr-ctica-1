@@ -25,7 +25,11 @@ form {
     background-color: white;
 }
 
-#menu ul li {
+#menu ul {
+    display: flex;
+}
+
+#menu ul div li {
     display: inline-block;
     padding: 5em;
     padding-top: 1em;
@@ -34,19 +38,19 @@ form {
     transition: .3s;
 }
 
-#menu ul li a {
+#menu ul div li a {
     color: black;
     text-decoration: none;
     font-family: 'Courier Prime', monospace;
 }
 
-#menu ul li:hover a {
+#menu ul div li:hover a {
     color: #FAC100;
     text-decoration: none;
 }
 
 /* Menu hamburguesa */
-#menu>ul>li:last-child {
+#menu ul div:last-child li:last-child {
     display: none;
 }
 
@@ -731,16 +735,22 @@ footer .row * {
         font-size: 0.8em;
     }
 
-  }
+}
 
-  @media only screen and (max-width: 1120px) {
+@media only screen and (max-width: 1120px) {
+
+    /* MENU  */
+    #menu ul div li {
+        padding-left: 3em;
+        padding-right: 3em;
+    }
     
     /* Pantalla de inicio */
 
     #pegatina_1 {
         margin-right: 5em;
     }
-  }
+}
 
 @media only screen and (max-width: 992px) {
 
@@ -840,9 +850,27 @@ footer .row * {
         margin-top: 0.5em;
     }
 
-  }
+}
 
 @media only screen and (max-width: 820px) {
+
+    #menu {
+        text-align: right;
+    }
+
+    /* only dots on display  */
+    #menu ul div li {
+        display: none;
+    }
+
+    #menu ul div:first-child li ,  #menu ul div:last-child li:last-child {
+        display: inline-block;
+    }
+
+    #menu ul:hover div li {
+        display: block;
+        padding: 1em;
+    }
 
     /* Pantalla de finalización de compra  */
 
@@ -910,7 +938,7 @@ footer .row * {
         font-size: 1em;
     }
 
-  }
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -1127,9 +1155,9 @@ footer .row * {
         width: 100%;
     }
 
-  }
+}
 
-  @media only screen and (max-width: 450px) {
+@media only screen and (max-width: 450px) {
 
     /* Pantalla de finalización de compra  */
 
