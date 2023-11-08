@@ -325,7 +325,7 @@ h1 {
     color: #0D55A2;
 }
 
- #formulario-container #fname {
+#formulario-container #fname {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -535,9 +535,13 @@ footer .row * {
 
 #resumen {
     margin: 0;
-    padding: 0;
+    padding-bottom: 2em;
     padding-left: 2em;
+    padding-right: 2em;
     background-color: #00AD93;
+    border-radius: 13px;
+    height: fit-content;
+    width: 30%;
 }
 
 #resumen h4 {
@@ -570,6 +574,16 @@ footer .row * {
 #total_pago {
     display: flex;
     align-items: end;
+}
+
+#total_pago .col-8 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#total_pago .col-4 {
+    padding-left: 1em;
 }
 
 #total_pago p, #total_pago h4 {
@@ -687,8 +701,10 @@ footer .row * {
         margin-bottom: 1em;
     }
 
-    /* No sé por qué hay un margen SOLUCIONARLO  */
-
+    #resumen {
+        padding-left: 1.5em;
+        padding-right: 6em;
+    }
     /* Pantalla de inicio  */
 
     #logo {
@@ -764,9 +780,9 @@ footer .row * {
 
     /* Pantalla de compra  */
 
-    .container {
-        margin-left: 3em;
-        margin-top: 3em;
+    #cortadas {
+        margin-left: 5em;
+
     }
 
     #cortadas #fname {
@@ -787,6 +803,10 @@ footer .row * {
 
     .iva {
         margin-left: 0.25em;
+    }
+
+    #resumen {
+        width: 40%;
     }
 
     /* Pantalla de inicio  */
@@ -850,13 +870,8 @@ footer .row * {
 
     /* Pantalla de compra  */
 
-
     #cantidad h3 {
         font-size: 3em;
-    }
-
-    #total_pago {
-        width: 200%;
     }
 
     .total {
@@ -897,47 +912,6 @@ footer .row * {
 
     /* Pantalla de compra  */
 
-    #resumen {
-        display: none;
-    }
-
-    #resumen_responsive {
-        display: flex; 
-        margin-bottom: 0; 
-        background-color: #00AD93;
-        padding: 1em;
-        border-radius: 13px;
-        align-items: center;
-    }
-
-    #cantidad h3 {
-        color: white;
-    }
-
-    #cerveza_pequeña {
-        width: 70%;
-        margin-bottom: 0;
-    }
-
-    #cerveza_pequeña img {
-        width: 100%;
-    }    
-
-    #total_pago {
-        height: 20%;
-        margin-top: 5em;
-        margin-left: 3em;
-        width: 100%;
-    }
-
-    #resumen_responsive h4{
-        color: white;
-    }
-
-    .iva {
-        font-size: 0.8em;
-    }
-
     #pagar {
         font-size: 1em;
     }
@@ -945,7 +919,6 @@ footer .row * {
     #volver {
         font-size: 1em;
     }
-
   }
 
 @media only screen and (max-width: 768px) {
@@ -968,7 +941,47 @@ footer .row * {
         font-size: 0.5em;
     }
 
+    #resumen {
+        display: none;
+    }
 
+    #resumen_responsive {
+        display: flex; 
+        flex-direction: column;
+        margin-bottom: 0; 
+        background-color: #00AD93;
+        padding: 2em;
+        border-radius: 13px;
+        width: 90%;
+    }
+
+    #cantidad h3 {
+        color: white;
+    }
+
+    #cerveza_pequeña {
+        width: 50%;
+        margin-bottom: 0;
+    }
+
+    #cerveza_pequeña img {
+        width: 100%;
+    }    
+
+    #total_pago {
+        margin-top: 0em;
+        margin-left: 0em;
+        width: 100%;
+    }
+
+    #resumen_responsive h4{
+        color: white;
+        font-size: 3em;
+    }
+
+    .iva {
+        font-size: 0.8em;
+    }
 
     /* Pantalla de inicio  */
     #producto_galeria {
@@ -1033,8 +1046,6 @@ footer .row * {
 
     /* Pantalla de compra */
 
-   
-
     #cerveza_pequeña {
         width: 70%;
     }
@@ -1045,15 +1056,9 @@ footer .row * {
 
     #cortadas {
         width: 90%;
+        margin-left: 3em;
     }
 
-    .iva {
-        margin-left: 1em;
-    }
-
-    #total_pago {
-        align-content: flex-end;
-    }
 
     /* Pantalla de inicio  */
 
@@ -1189,21 +1194,10 @@ footer .row * {
         font-size: 1.5em;
     }
 
-    #cerveza_pequeña {
-        width: 7%;
-    }
-
     #cortadas {
         margin-left: 1.5em;
     }
 
-    #resumen_responsive {
-        flex-direction: column;
-    }
-
-    #total_pago {
-        margin-top: 0;
-    }
 
     /* Pantalla de inicio  */
 
@@ -1233,6 +1227,10 @@ footer .row * {
 
     h6 {
         font-size: 1.25em;
+    }
+
+    #own_star img {
+        width: 90%;
     }
 
 }
