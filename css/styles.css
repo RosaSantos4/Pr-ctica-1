@@ -482,12 +482,12 @@ footer .row * {
     margin-bottom: 3em;
 }
 
-#datos #pago .col-7 {
+#datos #pago .col-lg-7 {
     width: 50%;
 } 
 
-#datos #pago .col-4 {
-    width: 50%;
+#datos #pago .col-lg-4 {
+    width: 45%;
 } 
 
 #datos #pago .col-8 {
@@ -847,7 +847,7 @@ footer .row * {
     }
 
     .banda {
-        margin-top: 115px;
+        margin-top: 50px;
     }
 
     /* Pantalla de compra  */
@@ -890,7 +890,7 @@ footer .row * {
     }
 
     .banda {
-        margin-top: 120px;
+        margin-top: 80px;
     }
 
     #final {
@@ -1119,6 +1119,11 @@ footer .row * {
     #datos #envío .row .col-md-5 {
         width: 45%;
     }
+
+    #datos #pago .col-lg-7, #datos #pago .col-lg-4 {
+        width: 100%;
+    } 
+    
 
     /* Pantalla de inicio  */
 
