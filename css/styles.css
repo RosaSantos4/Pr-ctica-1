@@ -679,7 +679,6 @@ footer .row * {
 
     #final #texto p {
         margin-bottom: 0.1em;
-        font-size: 0.8em;
     }
 
     #final #texto h3 {
@@ -715,7 +714,7 @@ footer .row * {
         width: 10em;
     }
 
-    #links h2 {
+    #white {
         font-size: 4em;
     }
 
@@ -740,19 +739,15 @@ footer .row * {
         width: 50%;
     }
 
-    #producto_info h3 {
+   h3 {
         font-size: 3em;
     }
 
-    #producto_info h4 {
+    h4 {
         font-size: 2em;
     }
 
-    #info_producto p {
-        font-size: 0.8em;
-    }
-
-    #producto_cantidad .btn-group {
+    p {
         font-size: 0.8em;
     }
 
