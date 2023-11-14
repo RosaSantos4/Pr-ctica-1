@@ -177,6 +177,7 @@ padding-top: 3em;
     #historia_v {
         display: block;
         max-width: 100%; 
+        margin-left: 0;
     }
 
     #historia_v div {
