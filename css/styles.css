@@ -372,20 +372,6 @@ h1 {
     height: 770px;
 }
 
-#menu_final {
-    background-color: #00AD93;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-#menu_final nav ul a {
-    color: white;
-}
-
-#menu_final nav ul a .col-2 i{
-    color: white;
-}
-
 .deco {
     position: absolute;
     margin-top: 8em;
