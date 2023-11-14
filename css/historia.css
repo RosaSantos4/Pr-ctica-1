@@ -149,7 +149,7 @@ padding-top: 3em;
 #historia_v {
     display: none;
 }
-
+/* MEDIA QUERIES */
 @media only screen and (max-width: 1300px) {
     #historia_h_brazo {
         bottom: 13em;
