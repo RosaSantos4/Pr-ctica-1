@@ -143,13 +143,8 @@ h5 {
 }
 
 .btn-primary:hover {
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
-    border-radius: 13px;
     border-color: #FAC100;
     background-color:  #FAC100;
-    font-size: 2em;
     color: white;
 }
 
@@ -166,14 +161,7 @@ h5 {
 }
 
 .btn-secondary:hover {
-    margin-left: 0.5em;
-    width: auto;
-    height: auto;
-    flex-shrink: 0;
-    border-radius: 13px;
     border: 5px solid var(--blue, #FAC100);
-    background-color:white ;
-    font-size: 2em;
     color: #0D55A2;
 }
 
@@ -193,12 +181,8 @@ h5 {
 }
 
 .btn-outline-primary:hover {
-    border: 5px solid var(--blue, #0D55A2);
     color: white;
     background-color: #0D55A2;
-    font-size: 1.75em;
-    padding-top: 0;
-    padding-bottom: 0;
 }
 
 #special { 
@@ -388,20 +372,6 @@ h1 {
     height: 770px;
 }
 
-#menu_final {
-    background-color: #00AD93;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-#menu_final nav ul a {
-    color: white;
-}
-
-#menu_final nav ul a .col-2 i{
-    color: white;
-}
-
 .deco {
     position: absolute;
     margin-top: 8em;
@@ -498,12 +468,12 @@ footer .row * {
     margin-bottom: 3em;
 }
 
-#datos #pago .col-7 {
+#datos #pago .col-lg-7 {
     width: 50%;
 } 
 
-#datos #pago .col-4 {
-    width: 50%;
+#datos #pago .col-lg-4 {
+    width: 45%;
 } 
 
 #datos #pago .col-8 {
@@ -679,7 +649,6 @@ footer .row * {
 
     #final #texto p {
         margin-bottom: 0.1em;
-        font-size: 0.8em;
     }
 
     #final #texto h3 {
@@ -715,7 +684,7 @@ footer .row * {
         width: 10em;
     }
 
-    #links h2 {
+    #white {
         font-size: 4em;
     }
 
@@ -740,19 +709,15 @@ footer .row * {
         width: 50%;
     }
 
-    #producto_info h3 {
+   h3 {
         font-size: 3em;
     }
 
-    #producto_info h4 {
+    h4 {
         font-size: 2em;
     }
 
-    #info_producto p {
-        font-size: 0.8em;
-    }
-
-    #producto_cantidad .btn-group {
+    p {
         font-size: 0.8em;
     }
 
@@ -780,10 +745,6 @@ footer .row * {
     .total {
         font-size: 1.5em;
     }
-
-    #total_pago h4 {
-        font-size: 2em;
-    }
   }
 
 
@@ -798,10 +759,6 @@ footer .row * {
 
     #cortadas #fname {
         font-size: 0.8em;
-    }
-
-    #cortadas h4 {
-        font-size: 2em;
     }
 
     #resumen h4 {
@@ -830,7 +787,7 @@ footer .row * {
         width: 65%;
     }
 
-    #links h2 {
+    #white {
         font-size: 3em;
     }
 
@@ -852,7 +809,7 @@ footer .row * {
         margin-bottom: 2em;
     }
 
-    #final #texto h3 {
+    h3 {
         font-size: 2.5em;
     }
 
@@ -876,17 +833,12 @@ footer .row * {
     }
 
     .banda {
-        margin-top: 115px;
+        margin-top: 50px;
     }
 
     /* Pantalla de compra  */
 
-    #cantidad h3 {
-        font-size: 3em;
-    }
-
     .total {
-        font-size: 1.5em;
         margin-top: 0.5em;
     }
 
@@ -924,7 +876,7 @@ footer .row * {
     }
 
     .banda {
-        margin-top: 120px;
+        margin-top: 80px;
     }
 
     #final {
@@ -948,6 +900,20 @@ footer .row * {
     #volver {
         font-size: 1em;
     }
+
+    /* Pantalla de inicio  */
+
+    #comprar {
+        font-size: 1em;
+    }
+
+    #publicar {
+        font-size: 1em;
+    }
+
+    #suscribirme {
+        font-size: 1em;
+    }
   }
 
 @media only screen and (max-width: 768px) {
@@ -958,7 +924,7 @@ footer .row * {
         width: 100%;
     }
 
-    #total_pago h4 {
+    h4 {
         font-size: 1.5em;
     }
 
@@ -967,7 +933,7 @@ footer .row * {
     }
 
     .iva {
-        font-size: 0.5em;
+        margin-left: 0.5em;
     }
 
     #resumen {
@@ -1005,11 +971,7 @@ footer .row * {
 
     #resumen_responsive h4{
         color: white;
-        font-size: 3em;
-    }
-
-    .iva {
-        font-size: 0.8em;
+        font-size: 2em;
     }
 
     /* Pantalla de inicio  */
@@ -1065,11 +1027,9 @@ footer .row * {
 
     #fname {
         margin-left: 2em;
-        font-size: 0.8em;
     }
 
     #suscribirme {
-    font-size: 1em;
     margin-left: 1.5em;
     }
 
@@ -1077,10 +1037,6 @@ footer .row * {
 
     #cerveza_pequeña {
         width: 70%;
-    }
-
-    #privacidad {
-        font-size: 0.8em;
     }
 
     #cortadas {
@@ -1095,7 +1051,7 @@ footer .row * {
         width: 8em;
     }
 
-    #links h2 {
+    #white {
         font-size: 2em;
         margin-top: 0.5em;
         margin-bottom: 0.5em;
@@ -1132,10 +1088,6 @@ footer .row * {
         display: none;
     }
 
-    #suscribirse {
-        font-size: 1em;
-    }
-
     /* Pantalla de compra  */
 
     #datos #fname {
@@ -1143,7 +1095,6 @@ footer .row * {
     }
 
     #privacidad {
-        font-size: 0.8em;
         width: 80%;
     }
 
@@ -1151,21 +1102,14 @@ footer .row * {
         width: 85%;
     }
 
-    .total {
-        font-size: 1em;
-    }
-
-    .iva {
-        font-size: 0.5em;
-    }
-
     #datos #envío .row .col-md-5 {
         width: 45%;
     }
 
-    #minimal p {
-        font-size: 0.8em;
-    }
+    #datos #pago .col-lg-7, #datos #pago .col-lg-4 {
+        width: 100%;
+    } 
+    
 
     /* Pantalla de inicio  */
 
@@ -1175,8 +1119,8 @@ footer .row * {
         align-content: center;
     }
 
-    #links h2 {
-        font-size: 3.2em;
+    #white {
+        font-size: 3em;
         margin-top: 0;
     }
 
@@ -1219,7 +1163,7 @@ footer .row * {
 
     /* Pantalla de compra  */
 
-    #cortadas h4 {
+    h4 {
         font-size: 1.5em;
     }
 
@@ -1227,6 +1171,13 @@ footer .row * {
         margin-left: 1.5em;
     }
 
+    .total {
+        font-size: 1.25em;
+    }
+
+    .iva {
+        font-size: 0.75em;
+    }
 
     /* Pantalla de inicio  */
 
@@ -1234,7 +1185,7 @@ footer .row * {
         margin-bottom: 1em;
     }
 
-    #links h2 {
+    #white {
         font-size: 2.5em;
     }
 
@@ -1250,10 +1201,6 @@ footer .row * {
         font-size: 2.5em;
     }
 
-    #producto_titulo h4 {
-        font-size: 1.5em;
-    }
-
     h6 {
         font-size: 1.25em;
     }
@@ -1261,5 +1208,7 @@ footer .row * {
     #own_star img {
         width: 90%;
     }
+
+    
 
 }
